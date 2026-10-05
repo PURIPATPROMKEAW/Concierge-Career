@@ -1,0 +1,4 @@
+.next
+node_modules
+services/api.generated.ts
+next-env.d.ts

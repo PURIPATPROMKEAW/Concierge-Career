@@ -1,0 +1,42 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint && pnpm typecheck && pnpm build
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: concierge
+          POSTGRES_PASSWORD: ci-test-only
+          POSTGRES_DB: concierge
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U concierge"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql+psycopg://concierge:ci-test-only@localhost:5432/concierge
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-dev.lock
+      - run: pip install --no-deps -e .
+      - run: ruff check . && pytest
+      - run: alembic upgrade head && python -m database.seeds.demo && python -m database.seeds.demo
+      - run: python -c "from backend.app.services.career import CareerService; from backend.app.repositories.career import SQLCareerRepository; import os; assert CareerService(SQLCareerRepository(os.environ['DATABASE_URL']), 'database').overview()['match']['score'] == 75"
+      - run: python -m backend.scripts.export_openapi && git diff --exit-code shared/contracts/openapi.json

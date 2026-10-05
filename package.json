@@ -1,0 +1,12 @@
+{
+  "name": "concierge-career",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "build": "pnpm --filter frontend build",
+    "typecheck": "pnpm --filter frontend typecheck",
+    "lint": "pnpm --filter frontend lint",
+    "contracts": "python -m backend.scripts.export_openapi && pnpm --filter frontend generate:api"
+  }
+}
