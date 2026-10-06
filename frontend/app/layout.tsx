@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Concierge Career",
-  description: "Know me. Guide me. Grow with me.",
+  title: "Concierge-Career | Find where you fit",
+  description:
+    "Understand your skills. Discover your strongest career matches. Know what to improve next.",
 };
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <a className="skip-link" href="#main">
-          Skip to content
-        </a>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

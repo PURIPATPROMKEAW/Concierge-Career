@@ -1,36 +1,38 @@
 services:
-  database:
+  postgres:
     image: postgres:17-alpine
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-concierge}
-      POSTGRES_USER: ${POSTGRES_USER:-concierge}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
-    ports: ["127.0.0.1:5432:5432"]
-    volumes: ["postgres_data:/var/lib/postgresql/data"]
+      POSTGRES_DB: concierge
+      POSTGRES_USER: concierge
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-localdemo}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - career-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
+      test: ["CMD-SHELL", "pg_isready -U concierge -d concierge"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
   backend:
-    build: { context: ., dockerfile: backend/Dockerfile }
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     environment:
-      DATA_MODE: database
-      AI_PROVIDER: mock
-      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-concierge}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB:-concierge}
-      CORS_ORIGINS: '["http://localhost:3000"]'
-    command: ["sh", "-c", "alembic upgrade head && python -m database.seeds.demo && uvicorn backend.app.main:app --host 0.0.0.0 --port 8000"]
-    ports: ["127.0.0.1:8000:8000"]
+      DATABASE_URL: postgresql+psycopg://concierge:${POSTGRES_PASSWORD:-localdemo}@postgres:5432/concierge
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+    ports:
+      - "127.0.0.1:8000:8000"
     depends_on:
-      database: { condition: service_healthy }
+      postgres:
+        condition: service_healthy
   frontend:
     build:
       context: .
       dockerfile: frontend/Dockerfile
-      args:
-        NEXT_PUBLIC_DATA_MODE: api
-        NEXT_PUBLIC_API_URL: http://localhost:8000
-    ports: ["127.0.0.1:3000:3000"]
-    depends_on: [backend]
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - backend
 volumes:
-  postgres_data:
+  career-data:

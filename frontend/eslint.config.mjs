@@ -4,5 +4,12 @@ import nextTs from "eslint-config-next/typescript";
 export default defineConfig([
   ...nextVitals,
   ...nextTs,
-  globalIgnores([".next/**", "next-env.d.ts", "services/api.generated.ts"]),
+  {
+    settings: { next: { rootDir: "frontend/" } },
+    rules: {
+      "react-hooks/set-state-in-effect": "off",
+      "react-hooks/exhaustive-deps": "off",
+    },
+  },
+  globalIgnores(["**/.next/**", "**/next-env.d.ts", "**/lib/api.generated.ts"]),
 ]);

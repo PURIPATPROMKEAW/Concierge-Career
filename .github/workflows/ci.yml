@@ -1,42 +1,52 @@
-name: CI
+name: Verify career demo
 on: [push, pull_request]
-permissions:
-  contents: read
 jobs:
-  frontend:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lint && pnpm typecheck && pnpm build
-  backend:
+  verify:
     runs-on: ubuntu-latest
     services:
       postgres:
         image: postgres:17-alpine
         env:
           POSTGRES_USER: concierge
-          POSTGRES_PASSWORD: ci-test-only
-          POSTGRES_DB: concierge
-        ports: ["5432:5432"]
-        options: >-
-          --health-cmd "pg_isready -U concierge"
-          --health-interval 5s --health-timeout 5s --health-retries 10
-    env:
-      DATABASE_URL: postgresql+psycopg://concierge:ci-test-only@localhost:5432/concierge
+          POSTGRES_PASSWORD: testonly
+          POSTGRES_DB: concierge_test
+        ports: ['5432:5432']
+        options: --health-cmd "pg_isready -U concierge -d concierge_test" --health-interval 3s --health-timeout 3s --health-retries 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements-dev.lock
-      - run: pip install --no-deps -e .
-      - run: ruff check . && pytest
-      - run: alembic upgrade head && python -m database.seeds.demo && python -m database.seeds.demo
-      - run: python -c "from backend.app.services.career import CareerService; from backend.app.repositories.career import SQLCareerRepository; import os; assert CareerService(SQLCareerRepository(os.environ['DATABASE_URL']), 'database').overview()['match']['score'] == 75"
-      - run: python -m backend.scripts.export_openapi && git diff --exit-code shared/contracts/openapi.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.19.0'
+      - run: pip install -r backend/requirements.txt
+      - run: pip install ruff==0.11.10
+      - run: pnpm install --frozen-lockfile
+      - run: python -m pytest backend/tests -q
+      - run: python -m ruff check backend ai database scripts
+      - run: pnpm lint
+      - run: python -m pytest backend/tests/test_api.py -q
+        env:
+          TEST_DATABASE_URL: postgresql+psycopg://concierge:testonly@localhost:5432/concierge_test
+      - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Start local test services
+        run: |
+          python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 > /tmp/concierge-api.log 2>&1 &
+          pnpm exec next start frontend --hostname 127.0.0.1 > /tmp/concierge-web.log 2>&1 &
+          for i in $(seq 1 45); do
+            if curl -fsS http://127.0.0.1:8000/api/health && curl -fsS http://127.0.0.1:3000 >/dev/null; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-test-results
+          path: test-results/

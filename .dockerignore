@@ -1,8 +1,10 @@
 .git
-**/node_modules
-**/.next
 .venv
-**/__pycache__
+node_modules
+frontend/.next
+*.db
 .env
-**/.env
-**/.env.local
+.tools
+.openai
+test-results
+playwright-report

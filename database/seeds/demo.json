@@ -1,0 +1,4166 @@
+{
+  "version": "2026.10-demo-v1",
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "normalized_name": "html",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "html",
+        "html"
+      ]
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "normalized_name": "css",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "css",
+        "css"
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "normalized_name": "javascript",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "javascript",
+        "javascript",
+        "js",
+        "java script"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "normalized_name": "react",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "react",
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "normalized_name": "next.js",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "nextjs",
+        "next.js",
+        "next.js",
+        "next js"
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "normalized_name": "typescript",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "typescript",
+        "typescript",
+        "ts"
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Frontend Testing",
+      "normalized_name": "frontend testing",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "testing",
+        "frontend testing",
+        "jest",
+        "vitest",
+        "frontend testing"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "normalized_name": "git",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "git",
+        "git"
+      ]
+    },
+    {
+      "id": "rest",
+      "name": "REST APIs",
+      "normalized_name": "rest apis",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "rest",
+        "rest apis",
+        "rest api",
+        "restful"
+      ]
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "normalized_name": "node.js",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "node",
+        "node.js"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "normalized_name": "python",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "python",
+        "python"
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "normalized_name": "java",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "java",
+        "java"
+      ]
+    },
+    {
+      "id": "oop",
+      "name": "Object-oriented Programming",
+      "normalized_name": "object-oriented programming",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "oop",
+        "object-oriented programming"
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "normalized_name": "sql",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "sql",
+        "sql"
+      ]
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "normalized_name": "postgresql",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "postgres",
+        "postgresql",
+        "postgresql"
+      ]
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "normalized_name": "excel",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "excel",
+        "excel"
+      ]
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "normalized_name": "power bi",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "powerbi",
+        "power bi"
+      ]
+    },
+    {
+      "id": "etl",
+      "name": "ETL Pipelines",
+      "normalized_name": "etl pipelines",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "etl",
+        "etl pipelines"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "normalized_name": "statistics",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "statistics",
+        "statistics"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "normalized_name": "pandas",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "pandas",
+        "pandas"
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning",
+      "normalized_name": "machine learning",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "ml",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "normalized_name": "tensorflow",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "tensorflow",
+        "tensorflow"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "normalized_name": "pytorch",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "pytorch",
+        "pytorch"
+      ]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "normalized_name": "linux",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "linux",
+        "linux"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "normalized_name": "docker",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "docker",
+        "docker"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "normalized_name": "aws",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "aws",
+        "aws"
+      ]
+    },
+    {
+      "id": "cicd",
+      "name": "CI/CD",
+      "normalized_name": "ci/cd",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "cicd",
+        "ci/cd"
+      ]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "normalized_name": "terraform",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "terraform",
+        "terraform"
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "normalized_name": "networking",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "networking",
+        "networking"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security Analysis",
+      "normalized_name": "security analysis",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "security",
+        "security analysis"
+      ]
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "normalized_name": "siem",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "siem",
+        "siem"
+      ]
+    },
+    {
+      "id": "incident",
+      "name": "Incident Response",
+      "normalized_name": "incident response",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "incident",
+        "incident response"
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "id": "frontend",
+      "name": "Frontend Developer",
+      "group": "Software Development",
+      "description": "Build useful software and thoughtful digital experiences."
+    },
+    {
+      "id": "backend",
+      "name": "Backend Developer",
+      "group": "Software Development",
+      "description": "Build useful software and thoughtful digital experiences."
+    },
+    {
+      "id": "fullstack",
+      "name": "Full-stack Developer",
+      "group": "Software Development",
+      "description": "Build useful software and thoughtful digital experiences."
+    },
+    {
+      "id": "software",
+      "name": "Software Engineer",
+      "group": "Software Development",
+      "description": "Build useful software and thoughtful digital experiences."
+    },
+    {
+      "id": "analyst",
+      "name": "Data Analyst",
+      "group": "Data",
+      "description": "Turn data into clarity, decisions, and reliable systems."
+    },
+    {
+      "id": "scientist",
+      "name": "Data Scientist",
+      "group": "Data",
+      "description": "Turn data into clarity, decisions, and reliable systems."
+    },
+    {
+      "id": "data-engineer",
+      "name": "Data Engineer",
+      "group": "Data",
+      "description": "Turn data into clarity, decisions, and reliable systems."
+    },
+    {
+      "id": "ai",
+      "name": "AI Engineer",
+      "group": "Artificial Intelligence",
+      "description": "Create intelligent systems grounded in data."
+    },
+    {
+      "id": "ml-engineer",
+      "name": "Machine Learning Engineer",
+      "group": "Artificial Intelligence",
+      "description": "Create intelligent systems grounded in data."
+    },
+    {
+      "id": "devops",
+      "name": "DevOps Engineer",
+      "group": "Infrastructure",
+      "description": "Keep modern systems reliable, scalable, and connected."
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Engineer",
+      "group": "Infrastructure",
+      "description": "Keep modern systems reliable, scalable, and connected."
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity Analyst",
+      "group": "Cybersecurity",
+      "description": "Protect systems and investigate emerging threats."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "frontend-01",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "NovaTech",
+      "title": "Frontend Developer Intern",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-02",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Orbit Labs",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "preferred",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-03",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "ByteWorks",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "preferred",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-04",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "BluePeak",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-05",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Nexa Systems",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-06",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "DataForge",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-07",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "CloudGrid",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join CloudGrid to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-08",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Vertex Labs",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Vertex Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-01",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "NovaTech",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "backend-02",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "Orbit Labs",
+      "title": "Junior Backend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-03",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "ByteWorks",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-04",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "BluePeak",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-05",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "Nexa Systems",
+      "title": "Junior Backend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-06",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "DataForge",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-01",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "NovaTech",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "fullstack-02",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "Orbit Labs",
+      "title": "Junior Full-stack Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-03",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "ByteWorks",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-04",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "BluePeak",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-01",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "NovaTech",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "software-02",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "Orbit Labs",
+      "title": "Junior Software Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-03",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "ByteWorks",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-04",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "BluePeak",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-05",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "Nexa Systems",
+      "title": "Junior Software Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-01",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "NovaTech",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "analyst-02",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "Orbit Labs",
+      "title": "Junior Data Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-03",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "ByteWorks",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-04",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "BluePeak",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-05",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "Nexa Systems",
+      "title": "Junior Data Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-06",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "DataForge",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-01",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "NovaTech",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "scientist-02",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "Orbit Labs",
+      "title": "Junior Data Scientist",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-03",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "ByteWorks",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-04",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "BluePeak",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-01",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "NovaTech",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-02",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "Orbit Labs",
+      "title": "Junior Data Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-03",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "ByteWorks",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-04",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "BluePeak",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-01",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "NovaTech",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "ai-02",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "Orbit Labs",
+      "title": "Junior AI Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-03",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "ByteWorks",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-04",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "BluePeak",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-01",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "NovaTech",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-02",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "Orbit Labs",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-03",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "ByteWorks",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-04",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "BluePeak",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "devops-01",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "NovaTech",
+      "title": "Junior DevOps Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "devops-02",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "Orbit Labs",
+      "title": "Junior DevOps Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "devops-03",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "ByteWorks",
+      "title": "Junior DevOps Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "cloud-01",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "NovaTech",
+      "title": "Junior Cloud Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "cloud-02",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "Orbit Labs",
+      "title": "Junior Cloud Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "cloud-03",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "ByteWorks",
+      "title": "Junior Cloud Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-01",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "NovaTech",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "security-02",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "Orbit Labs",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-03",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "ByteWorks",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-04",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "BluePeak",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-05",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "Nexa Systems",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "learn-typescript",
+      "skill_id": "typescript",
+      "title": "TypeScript Fundamentals",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in TypeScript.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of TypeScript.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-testing",
+      "skill_id": "testing",
+      "title": "Frontend Testing Fundamentals",
+      "resource_type": "Workshop",
+      "duration": "5 hours",
+      "description": "A curated demo learning activity to build practical confidence in Frontend Testing.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Frontend Testing.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-react",
+      "skill_id": "react",
+      "title": "React Component Patterns",
+      "resource_type": "Mini project",
+      "duration": "8 hours",
+      "description": "A curated demo learning activity to build practical confidence in React.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of React.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-html",
+      "skill_id": "html",
+      "title": "HTML Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in HTML.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of HTML.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-css",
+      "skill_id": "css",
+      "title": "CSS Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in CSS.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of CSS.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-javascript",
+      "skill_id": "javascript",
+      "title": "JavaScript Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in JavaScript.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of JavaScript.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-nextjs",
+      "skill_id": "nextjs",
+      "title": "Next.js Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Next.js.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Next.js.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-git",
+      "skill_id": "git",
+      "title": "Git Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Git.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Git.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-rest",
+      "skill_id": "rest",
+      "title": "REST APIs Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in REST APIs.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of REST APIs.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-node",
+      "skill_id": "node",
+      "title": "Node.js Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Node.js.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Node.js.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-python",
+      "skill_id": "python",
+      "title": "Python Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Python.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Python.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-java",
+      "skill_id": "java",
+      "title": "Java Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Java.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Java.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-oop",
+      "skill_id": "oop",
+      "title": "Object-oriented Programming Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Object-oriented Programming.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Object-oriented Programming.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-sql",
+      "skill_id": "sql",
+      "title": "SQL Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in SQL.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of SQL.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-postgres",
+      "skill_id": "postgres",
+      "title": "PostgreSQL Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in PostgreSQL.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of PostgreSQL.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-excel",
+      "skill_id": "excel",
+      "title": "Excel Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Excel.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Excel.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-powerbi",
+      "skill_id": "powerbi",
+      "title": "Power BI Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Power BI.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Power BI.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-etl",
+      "skill_id": "etl",
+      "title": "ETL Pipelines Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in ETL Pipelines.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of ETL Pipelines.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-statistics",
+      "skill_id": "statistics",
+      "title": "Statistics Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Statistics.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Statistics.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-pandas",
+      "skill_id": "pandas",
+      "title": "Pandas Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Pandas.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Pandas.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-ml",
+      "skill_id": "ml",
+      "title": "Machine Learning Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Machine Learning.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Machine Learning.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-tensorflow",
+      "skill_id": "tensorflow",
+      "title": "TensorFlow Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in TensorFlow.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of TensorFlow.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-pytorch",
+      "skill_id": "pytorch",
+      "title": "PyTorch Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in PyTorch.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of PyTorch.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-linux",
+      "skill_id": "linux",
+      "title": "Linux Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Linux.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Linux.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-docker",
+      "skill_id": "docker",
+      "title": "Docker Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Docker.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Docker.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-aws",
+      "skill_id": "aws",
+      "title": "AWS Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in AWS.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of AWS.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-cicd",
+      "skill_id": "cicd",
+      "title": "CI/CD Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in CI/CD.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of CI/CD.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-terraform",
+      "skill_id": "terraform",
+      "title": "Terraform Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Terraform.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Terraform.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-networking",
+      "skill_id": "networking",
+      "title": "Networking Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Networking.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Networking.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-security",
+      "skill_id": "security",
+      "title": "Security Analysis Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Security Analysis.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Security Analysis.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-siem",
+      "skill_id": "siem",
+      "title": "SIEM Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in SIEM.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of SIEM.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    },
+    {
+      "id": "learn-incident",
+      "skill_id": "incident",
+      "title": "Incident Response Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "A curated demo learning activity to build practical confidence in Incident Response.",
+      "outcome_level": 2,
+      "steps": [
+        "Review the core concepts of Incident Response.",
+        "Apply the concepts in a small working example.",
+        "Document what you learned and add evidence to your profile."
+      ]
+    }
+  ],
+  "alex": {
+    "name": "Alex",
+    "university": "Chulalongkorn University",
+    "field": "Computer Engineering",
+    "degree": "Bachelor",
+    "graduation_year": 2027,
+    "skills": [
+      {
+        "skill_id": "html",
+        "proficiency": 3,
+        "source": "resume"
+      },
+      {
+        "skill_id": "css",
+        "proficiency": 3,
+        "source": "resume"
+      },
+      {
+        "skill_id": "javascript",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "git",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "nextjs",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "react",
+        "proficiency": 1,
+        "source": "resume"
+      },
+      {
+        "skill_id": "sql",
+        "proficiency": 1,
+        "source": "resume"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Chulalongkorn University",
+        "degree": "Bachelor",
+        "field": "Computer Engineering",
+        "start_year": 2023,
+        "end_year": 2027,
+        "enrolled": true
+      }
+    ],
+    "experiences": [
+      {
+        "organization": "Campus Digital Studio",
+        "role": "Web Development Intern",
+        "start": "2025-06",
+        "end": "2025-08",
+        "description": "Built accessible web interfaces and collaborated on a student services application.",
+        "skills": [
+          "html",
+          "css",
+          "javascript",
+          "git",
+          "nextjs"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Room Booking System",
+        "description": "A campus booking experience with room availability and responsive reservation forms.",
+        "stack": [
+          "Next.js",
+          "JavaScript",
+          "SQL"
+        ],
+        "project_type": "University"
+      },
+      {
+        "name": "Personal Portfolio Website",
+        "description": "A responsive portfolio highlighting projects and internship experience.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "project_type": "Personal"
+      },
+      {
+        "name": "Web Application Project",
+        "description": "A collaborative student application using reusable UI components.",
+        "stack": [
+          "React",
+          "Git"
+        ],
+        "project_type": "Team"
+      }
+    ],
+    "certifications": []
+  }
+}
