@@ -1,5 +1,6 @@
 node_modules/
 frontend/.next/
+frontend/next-env.d.ts
 frontend/out/
 .venv/
 __pycache__/
