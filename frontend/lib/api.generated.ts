@@ -1,0 +1,24 @@
+// Generated from shared/contracts/openapi.json. Do not edit.
+export type AlternativeOutput = { "career": CareerOutput; "readiness": number; "matched_skills": (string)[]; "jobs_analyzed": number };
+export type AnalysisInput = { "user_id": string; "career_id": string };
+export type AnalysisOutput = { "career": CareerOutput; "readiness": number; "jobs_analyzed": number; "ready_count": number; "strong_count": number; "jobs": (JobMatchOutput)[]; "gaps": (GapOutput)[]; "demand": (DemandOutput)[]; "insight": string; "profile_revision": number; "dataset_version": string };
+export type Body_resume_api_resume_analyze_post = { "file": string };
+export type CareerOutput = { "id": string; "name": string; "group": string; "description": string };
+export type CertificationInput = { "name": string; "issuer": string; "year": number };
+export type ChatInput = { "user_id": string; "career_id": string; "message": string; "job_id": string | null };
+export type CompletionInput = { "user_id": string; "career_id": string; "resource_id": string };
+export type DemandOutput = { "skill_id": string; "name": string; "count": number; "percent": number };
+export type EducationInput = { "institution": string; "degree": string; "field": string; "start_year": number; "end_year": number; "enrolled": boolean };
+export type ExperienceInput = { "organization": string; "role": string; "start": string; "end": string; "description": string; "skills": (string)[] };
+export type GapOutput = { "skill_id": string; "name": string; "current": number; "target": number; "demand": number; "job_count": number; "required_count": number; "priority": string; "priority_value": number; "unlocks": number };
+export type HTTPValidationError = { "detail": (ValidationError)[] };
+export type JobMatchOutput = { "id": string; "career_id": string; "company": string; "title": string; "location": string; "employment_type": string; "experience_level": string; "description": string; "source_type": string; "score": number; "raw_score": number; "recommendation": string; "breakdown": Record<string, number>; "weights": Record<string, number>; "comparisons": (RequirementOutput)[]; "matched_skills": (string)[]; "partial_skills": (string)[]; "missing_skills": (string)[]; "critical_missing": (string)[] };
+export type LearningOutput = { "id": string; "skill_id": string; "title": string; "resource_type": string; "duration": string; "description": string; "outcome_level": number; "steps": (string)[]; "gap": GapOutput | null; "completed": boolean; "completed_at": string | null; "summary": Record<string, unknown> | null };
+export type ProfileInput = { "name": string; "university": string; "field": string; "degree": string; "graduation_year": number; "skills": (SkillInput)[]; "education": (EducationInput)[]; "experiences": (ExperienceInput)[]; "projects": (ProjectInput)[]; "certifications": (CertificationInput)[] };
+export type ProfileOutput = { "name": string; "university": string; "field": string; "degree": string; "graduation_year": number; "skills": (SkillInput)[]; "education": (EducationInput)[]; "experiences": (ExperienceInput)[]; "projects": (ProjectInput)[]; "certifications": (CertificationInput)[]; "id": string; "revision": number };
+export type ProgressOutput = { "before": AnalysisOutput; "after": AnalysisOutput; "profile": ProfileOutput; "already_completed": boolean };
+export type ProjectInput = { "name": string; "description": string; "stack": (string)[]; "project_type": string };
+export type RequirementOutput = { "skill_id": string; "name": string; "requirement_type": string; "importance": string; "minimum_proficiency": number; "current": number; "satisfaction": number; "status": string };
+export type SkillInput = { "skill_id": string; "proficiency": number; "source": "manual" | "resume" | "project" | "experience" | "certificate" | "demo_learning" };
+export type SkillOutput = { "id": string; "name": string; "category": string; "competency": string; "normalized_name": string; "esco_id": string | null; "aliases": (string)[] };
+export type ValidationError = { "loc": (string | number)[]; "msg": string; "type": string };

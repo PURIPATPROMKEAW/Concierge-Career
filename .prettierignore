@@ -1,0 +1,8 @@
+node_modules
+frontend/.next
+.venv
+.tools
+shared/contracts
+database/seeds
+frontend/lib/api.generated.ts
+pnpm-lock.yaml

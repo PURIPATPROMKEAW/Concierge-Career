@@ -1,0 +1,3974 @@
+{
+  "version": "2026.10-demo-v2",
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "normalized_name": "html",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "html",
+        "html"
+      ]
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "normalized_name": "css",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "css",
+        "css"
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "normalized_name": "javascript",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "javascript",
+        "javascript",
+        "js",
+        "java script"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "normalized_name": "react",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "react",
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "normalized_name": "next.js",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "nextjs",
+        "next.js",
+        "next.js",
+        "next js"
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "normalized_name": "typescript",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "typescript",
+        "typescript",
+        "ts"
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Frontend Testing",
+      "normalized_name": "frontend testing",
+      "category": "Web development",
+      "competency": "Web development",
+      "esco_id": null,
+      "aliases": [
+        "testing",
+        "frontend testing",
+        "jest",
+        "vitest",
+        "frontend testing"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "normalized_name": "git",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "git",
+        "git"
+      ]
+    },
+    {
+      "id": "rest",
+      "name": "REST APIs",
+      "normalized_name": "rest apis",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "rest",
+        "rest apis",
+        "rest api",
+        "restful"
+      ]
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "normalized_name": "node.js",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "node",
+        "node.js"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "normalized_name": "python",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "python",
+        "python"
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "normalized_name": "java",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "java",
+        "java"
+      ]
+    },
+    {
+      "id": "oop",
+      "name": "Object-oriented Programming",
+      "normalized_name": "object-oriented programming",
+      "category": "Engineering practice",
+      "competency": "Engineering practice",
+      "esco_id": null,
+      "aliases": [
+        "oop",
+        "object-oriented programming"
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "normalized_name": "sql",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "sql",
+        "sql"
+      ]
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "normalized_name": "postgresql",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "postgres",
+        "postgresql",
+        "postgresql"
+      ]
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "normalized_name": "excel",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "excel",
+        "excel"
+      ]
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "normalized_name": "power bi",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "powerbi",
+        "power bi"
+      ]
+    },
+    {
+      "id": "etl",
+      "name": "ETL Pipelines",
+      "normalized_name": "etl pipelines",
+      "category": "Data management",
+      "competency": "Data management",
+      "esco_id": null,
+      "aliases": [
+        "etl",
+        "etl pipelines"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "normalized_name": "statistics",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "statistics",
+        "statistics"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "normalized_name": "pandas",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "pandas",
+        "pandas"
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning",
+      "normalized_name": "machine learning",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "ml",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "normalized_name": "tensorflow",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "tensorflow",
+        "tensorflow"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "normalized_name": "pytorch",
+      "category": "Data science",
+      "competency": "Data science",
+      "esco_id": null,
+      "aliases": [
+        "pytorch",
+        "pytorch"
+      ]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "normalized_name": "linux",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "linux",
+        "linux"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "normalized_name": "docker",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "docker",
+        "docker"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "normalized_name": "aws",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "aws",
+        "aws"
+      ]
+    },
+    {
+      "id": "cicd",
+      "name": "CI/CD",
+      "normalized_name": "ci/cd",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "cicd",
+        "ci/cd"
+      ]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "normalized_name": "terraform",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "terraform",
+        "terraform"
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "normalized_name": "networking",
+      "category": "Infrastructure",
+      "competency": "Infrastructure",
+      "esco_id": null,
+      "aliases": [
+        "networking",
+        "networking"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security Analysis",
+      "normalized_name": "security analysis",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "security",
+        "security analysis"
+      ]
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "normalized_name": "siem",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "siem",
+        "siem"
+      ]
+    },
+    {
+      "id": "incident",
+      "name": "Incident Response",
+      "normalized_name": "incident response",
+      "category": "Security",
+      "competency": "Security",
+      "esco_id": null,
+      "aliases": [
+        "incident",
+        "incident response"
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "id": "frontend",
+      "name": "Frontend Developer",
+      "group": "Software Development",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard."
+    },
+    {
+      "id": "backend",
+      "name": "Backend Developer",
+      "group": "Software Development",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions."
+    },
+    {
+      "id": "fullstack",
+      "name": "Full-stack Developer",
+      "group": "Software Development",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature."
+    },
+    {
+      "id": "software",
+      "name": "Software Engineer",
+      "group": "Software Development",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module."
+    },
+    {
+      "id": "analyst",
+      "name": "Data Analyst",
+      "group": "Data",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours."
+    },
+    {
+      "id": "scientist",
+      "name": "Data Scientist",
+      "group": "Data",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty."
+    },
+    {
+      "id": "data-engineer",
+      "name": "Data Engineer",
+      "group": "Data",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse."
+    },
+    {
+      "id": "ai",
+      "name": "AI Engineer",
+      "group": "Artificial Intelligence",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses."
+    },
+    {
+      "id": "ml-engineer",
+      "name": "Machine Learning Engineer",
+      "group": "Artificial Intelligence",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks."
+    },
+    {
+      "id": "devops",
+      "name": "DevOps Engineer",
+      "group": "Infrastructure",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring."
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Engineer",
+      "group": "Infrastructure",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service."
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity Analyst",
+      "group": "Cybersecurity",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "frontend-01",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "NovaTech",
+      "title": "Frontend Developer Intern",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-02",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Orbit Labs",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "preferred",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-03",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "ByteWorks",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "preferred",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-04",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "BluePeak",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-05",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Nexa Systems",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Nexa Systems on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-06",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "DataForge",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with DataForge on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "high",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-07",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "CloudGrid",
+      "title": "Junior Frontend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with CloudGrid on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "css",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "frontend-08",
+      "career_id": "frontend",
+      "occupation_id": "occ-frontend",
+      "company": "Vertex Labs",
+      "title": "Junior Frontend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Vertex Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "html",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "nextjs",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "low",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-01",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "NovaTech",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "backend-02",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "Orbit Labs",
+      "title": "Junior Backend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-03",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "ByteWorks",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-04",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "BluePeak",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-05",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "Nexa Systems",
+      "title": "Junior Backend Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with Nexa Systems on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "backend-06",
+      "career_id": "backend",
+      "occupation_id": "occ-backend",
+      "company": "DataForge",
+      "title": "Junior Backend Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with DataForge on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-01",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "NovaTech",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "fullstack-02",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "Orbit Labs",
+      "title": "Junior Full-stack Developer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-03",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "ByteWorks",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "fullstack-04",
+      "career_id": "fullstack",
+      "occupation_id": "occ-fullstack",
+      "company": "BluePeak",
+      "title": "Junior Full-stack Developer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "javascript",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "react",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "node",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "typescript",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-01",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "NovaTech",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "software-02",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "Orbit Labs",
+      "title": "Junior Software Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-03",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "ByteWorks",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-04",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "BluePeak",
+      "title": "Junior Software Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "software-05",
+      "career_id": "software",
+      "occupation_id": "occ-software",
+      "company": "Nexa Systems",
+      "title": "Junior Software Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with Nexa Systems on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "java",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "oop",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "testing",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-01",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "NovaTech",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "analyst-02",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "Orbit Labs",
+      "title": "Junior Data Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-03",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "ByteWorks",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-04",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "BluePeak",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-05",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "Nexa Systems",
+      "title": "Junior Data Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with Nexa Systems on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "python",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "analyst-06",
+      "career_id": "analyst",
+      "occupation_id": "occ-analyst",
+      "company": "DataForge",
+      "title": "Junior Data Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with DataForge on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "excel",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "powerbi",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-01",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "NovaTech",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "scientist-02",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "Orbit Labs",
+      "title": "Junior Data Scientist",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-03",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "ByteWorks",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pandas",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "scientist-04",
+      "career_id": "scientist",
+      "occupation_id": "occ-scientist",
+      "company": "BluePeak",
+      "title": "Junior Data Scientist",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-01",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "NovaTech",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-02",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "Orbit Labs",
+      "title": "Junior Data Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-03",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "ByteWorks",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "data-engineer-04",
+      "career_id": "data-engineer",
+      "occupation_id": "occ-data-engineer",
+      "company": "BluePeak",
+      "title": "Junior Data Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "sql",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "etl",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "postgres",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-01",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "NovaTech",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "ai-02",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "Orbit Labs",
+      "title": "Junior AI Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-03",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "ByteWorks",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ai-04",
+      "career_id": "ai",
+      "occupation_id": "occ-ai",
+      "company": "BluePeak",
+      "title": "Junior AI Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "pytorch",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "rest",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-01",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "NovaTech",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-02",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "Orbit Labs",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-03",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "ByteWorks",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "statistics",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer-04",
+      "career_id": "ml-engineer",
+      "occupation_id": "occ-ml-engineer",
+      "company": "BluePeak",
+      "title": "Junior Machine Learning Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "python",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "ml",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "tensorflow",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "devops-01",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "NovaTech",
+      "title": "Junior DevOps Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "devops-02",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "Orbit Labs",
+      "title": "Junior DevOps Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "aws",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "devops-03",
+      "career_id": "devops",
+      "occupation_id": "occ-devops",
+      "company": "ByteWorks",
+      "title": "Junior DevOps Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "cicd",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "git",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "cloud-01",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "NovaTech",
+      "title": "Junior Cloud Engineer",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "cloud-02",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "Orbit Labs",
+      "title": "Junior Cloud Engineer",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "cloud-03",
+      "career_id": "cloud",
+      "occupation_id": "occ-cloud",
+      "company": "ByteWorks",
+      "title": "Junior Cloud Engineer",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "aws",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "terraform",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "docker",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-01",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "NovaTech",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Internship",
+      "experience_level": "Intern",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with NovaTech on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 1
+        }
+      ]
+    },
+    {
+      "id": "security-02",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "Orbit Labs",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 3,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with Orbit Labs on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-03",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "ByteWorks",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok \u00b7 Hybrid",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 6,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with ByteWorks on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-04",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "BluePeak",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Bangkok, Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 12,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with BluePeak on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "incident",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    },
+    {
+      "id": "security-05",
+      "career_id": "security",
+      "occupation_id": "occ-security",
+      "company": "Nexa Systems",
+      "title": "Junior Cybersecurity Analyst",
+      "location": "Remote \u00b7 Thailand",
+      "employment_type": "Full-time",
+      "experience_level": "Entry level",
+      "experience_months": 0,
+      "education_level": "Bachelor",
+      "education_fields": [
+        "Computer Engineering",
+        "Computer Science",
+        "Software Engineering",
+        "Information Technology"
+      ],
+      "accepts_enrolled": true,
+      "source_type": "fictional_demo",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with Nexa Systems on this fictional demo position.",
+      "requirements": [
+        {
+          "skill_id": "security",
+          "requirement_type": "required",
+          "importance": "critical",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "siem",
+          "requirement_type": "required",
+          "importance": "high",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "networking",
+          "requirement_type": "required",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        },
+        {
+          "skill_id": "linux",
+          "requirement_type": "preferred",
+          "importance": "medium",
+          "minimum_proficiency": 2
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "learn-typescript",
+      "skill_id": "typescript",
+      "title": "TypeScript Fundamentals",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Convert the Room Booking form to TypeScript with typed room, date, and reservation fields.",
+      "outcome_level": 2,
+      "steps": [
+        "Convert the Room Booking form to TypeScript with typed room, date, and reservation fields.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-testing",
+      "skill_id": "testing",
+      "title": "Frontend Testing Fundamentals",
+      "resource_type": "Workshop",
+      "duration": "5 hours",
+      "description": "Test duplicate reservations, invalid dates, and a successful Room Booking submission.",
+      "outcome_level": 2,
+      "steps": [
+        "Test duplicate reservations, invalid dates, and a successful Room Booking submission.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-react",
+      "skill_id": "react",
+      "title": "React Component Patterns",
+      "resource_type": "Mini project",
+      "duration": "8 hours",
+      "description": "Split Room Booking into controlled React components with reusable validation state.",
+      "outcome_level": 2,
+      "steps": [
+        "Split Room Booking into controlled React components with reusable validation state.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-html",
+      "skill_id": "html",
+      "title": "HTML Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Add semantic labels, fieldsets, and keyboard controls to the Room Booking form.",
+      "outcome_level": 2,
+      "steps": [
+        "Add semantic labels, fieldsets, and keyboard controls to the Room Booking form.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-css",
+      "skill_id": "css",
+      "title": "CSS Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Make the Personal Portfolio layout work at 320px and 1440px without hiding content.",
+      "outcome_level": 2,
+      "steps": [
+        "Make the Personal Portfolio layout work at 320px and 1440px without hiding content.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-javascript",
+      "skill_id": "javascript",
+      "title": "JavaScript Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Validate booking dates and display useful errors before form submission.",
+      "outcome_level": 2,
+      "steps": [
+        "Validate booking dates and display useful errors before form submission.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-nextjs",
+      "skill_id": "nextjs",
+      "title": "Next.js Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Add a booking detail route with loading and not-found states.",
+      "outcome_level": 2,
+      "steps": [
+        "Add a booking detail route with loading and not-found states.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-git",
+      "skill_id": "git",
+      "title": "Git Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Use a feature branch to review and resolve a booking-form merge conflict.",
+      "outcome_level": 2,
+      "steps": [
+        "Use a feature branch to review and resolve a booking-form merge conflict.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-rest",
+      "skill_id": "rest",
+      "title": "REST APIs Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Design booking API responses for successful requests, missing rooms, and overlapping dates.",
+      "outcome_level": 2,
+      "steps": [
+        "Design booking API responses for successful requests, missing rooms, and overlapping dates.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-node",
+      "skill_id": "node",
+      "title": "Node.js Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Implement a validated booking endpoint in Node.js.",
+      "outcome_level": 2,
+      "steps": [
+        "Implement a validated booking endpoint in Node.js.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-python",
+      "skill_id": "python",
+      "title": "Python Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Clean a synthetic booking CSV and summarize reservations by weekday.",
+      "outcome_level": 2,
+      "steps": [
+        "Clean a synthetic booking CSV and summarize reservations by weekday.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-java",
+      "skill_id": "java",
+      "title": "Java Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Model rooms and reservations as Java classes with validation methods.",
+      "outcome_level": 2,
+      "steps": [
+        "Model rooms and reservations as Java classes with validation methods.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-oop",
+      "skill_id": "oop",
+      "title": "Object-oriented Programming Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Separate booking availability rules from persistence using interfaces.",
+      "outcome_level": 2,
+      "steps": [
+        "Separate booking availability rules from persistence using interfaces.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-sql",
+      "skill_id": "sql",
+      "title": "SQL Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Query available rooms, reservation totals, and overlapping bookings.",
+      "outcome_level": 2,
+      "steps": [
+        "Query available rooms, reservation totals, and overlapping bookings.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-postgres",
+      "skill_id": "postgres",
+      "title": "PostgreSQL Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Create PostgreSQL room and booking tables with foreign keys and a transaction.",
+      "outcome_level": 2,
+      "steps": [
+        "Create PostgreSQL room and booking tables with foreign keys and a transaction.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-excel",
+      "skill_id": "excel",
+      "title": "Excel Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Build a pivot table showing peak hours from synthetic booking records.",
+      "outcome_level": 2,
+      "steps": [
+        "Build a pivot table showing peak hours from synthetic booking records.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-powerbi",
+      "skill_id": "powerbi",
+      "title": "Power BI Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Create a room-utilization report with date and location filters.",
+      "outcome_level": 2,
+      "steps": [
+        "Create a room-utilization report with date and location filters.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-etl",
+      "skill_id": "etl",
+      "title": "ETL Pipelines Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Build a repeatable validation and loading pipeline for booking events.",
+      "outcome_level": 2,
+      "steps": [
+        "Build a repeatable validation and loading pipeline for booking events.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-statistics",
+      "skill_id": "statistics",
+      "title": "Statistics Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Compare weekday booking averages and explain a confidence interval.",
+      "outcome_level": 2,
+      "steps": [
+        "Compare weekday booking averages and explain a confidence interval.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-pandas",
+      "skill_id": "pandas",
+      "title": "Pandas Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Clean missing dates and duplicate rows in a booking dataset with Pandas.",
+      "outcome_level": 2,
+      "steps": [
+        "Clean missing dates and duplicate rows in a booking dataset with Pandas.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-ml",
+      "skill_id": "ml",
+      "title": "Machine Learning Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Evaluate a booking-demand baseline on a held-out time period.",
+      "outcome_level": 2,
+      "steps": [
+        "Evaluate a booking-demand baseline on a held-out time period.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-tensorflow",
+      "skill_id": "tensorflow",
+      "title": "TensorFlow Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Compare a small TensorFlow demand model with a simple baseline.",
+      "outcome_level": 2,
+      "steps": [
+        "Compare a small TensorFlow demand model with a simple baseline.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-pytorch",
+      "skill_id": "pytorch",
+      "title": "PyTorch Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Build a PyTorch training loop with a separate validation set.",
+      "outcome_level": 2,
+      "steps": [
+        "Build a PyTorch training loop with a separate validation set.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-linux",
+      "skill_id": "linux",
+      "title": "Linux Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Inspect booking service logs, processes, and file permissions.",
+      "outcome_level": 2,
+      "steps": [
+        "Inspect booking service logs, processes, and file permissions.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-docker",
+      "skill_id": "docker",
+      "title": "Docker Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Containerize a booking API and verify its health endpoint.",
+      "outcome_level": 2,
+      "steps": [
+        "Containerize a booking API and verify its health endpoint.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-aws",
+      "skill_id": "aws",
+      "title": "AWS Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Sketch AWS hosting for the booking app with access rules and cost assumptions.",
+      "outcome_level": 2,
+      "steps": [
+        "Sketch AWS hosting for the booking app with access rules and cost assumptions.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-cicd",
+      "skill_id": "cicd",
+      "title": "CI/CD Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Test the booking API before building a deployment artifact in CI.",
+      "outcome_level": 2,
+      "steps": [
+        "Test the booking API before building a deployment artifact in CI.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-terraform",
+      "skill_id": "terraform",
+      "title": "Terraform Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Describe a booking-service environment using reusable Terraform variables.",
+      "outcome_level": 2,
+      "steps": [
+        "Describe a booking-service environment using reusable Terraform variables.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-networking",
+      "skill_id": "networking",
+      "title": "Networking Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Trace a booking request through DNS, HTTPS, and the application service.",
+      "outcome_level": 2,
+      "steps": [
+        "Trace a booking request through DNS, HTTPS, and the application service.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-security",
+      "skill_id": "security",
+      "title": "Security Analysis Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Threat-model the booking form and propose controls for three concrete risks.",
+      "outcome_level": 2,
+      "steps": [
+        "Threat-model the booking form and propose controls for three concrete risks.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-siem",
+      "skill_id": "siem",
+      "title": "SIEM Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Detect repeated failed booking access in synthetic log records.",
+      "outcome_level": 2,
+      "steps": [
+        "Detect repeated failed booking access in synthetic log records.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    },
+    {
+      "id": "learn-incident",
+      "skill_id": "incident",
+      "title": "Incident Response Foundations",
+      "resource_type": "Guided practice",
+      "duration": "6 hours",
+      "description": "Write a timeline and containment plan for synthetic suspicious booking activity.",
+      "outcome_level": 2,
+      "steps": [
+        "Write a timeline and containment plan for synthetic suspicious booking activity.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
+      ]
+    }
+  ],
+  "alex": {
+    "name": "Puripatjudhai",
+    "university": "Chulalongkorn University",
+    "field": "Computer Engineering",
+    "degree": "Bachelor",
+    "graduation_year": 2027,
+    "skills": [
+      {
+        "skill_id": "html",
+        "proficiency": 3,
+        "source": "resume"
+      },
+      {
+        "skill_id": "css",
+        "proficiency": 3,
+        "source": "resume"
+      },
+      {
+        "skill_id": "javascript",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "git",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "nextjs",
+        "proficiency": 2,
+        "source": "resume"
+      },
+      {
+        "skill_id": "react",
+        "proficiency": 1,
+        "source": "resume"
+      },
+      {
+        "skill_id": "sql",
+        "proficiency": 1,
+        "source": "resume"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Chulalongkorn University",
+        "degree": "Bachelor",
+        "field": "Computer Engineering",
+        "start_year": 2023,
+        "end_year": 2027,
+        "enrolled": true
+      }
+    ],
+    "experiences": [
+      {
+        "organization": "Campus Digital Studio",
+        "role": "Web Development Intern",
+        "start": "2025-06",
+        "end": "2025-08",
+        "description": "Built accessible web interfaces and collaborated on a student services application.",
+        "skills": [
+          "html",
+          "css",
+          "javascript",
+          "git",
+          "nextjs"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Room Booking System",
+        "description": "A campus booking experience with room availability and responsive reservation forms.",
+        "stack": [
+          "Next.js",
+          "JavaScript",
+          "SQL"
+        ],
+        "project_type": "University"
+      },
+      {
+        "name": "Personal Portfolio Website",
+        "description": "A responsive portfolio highlighting projects and internship experience.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "project_type": "Personal"
+      },
+      {
+        "name": "Web Application Project",
+        "description": "A collaborative student application using reusable UI components.",
+        "stack": [
+          "React",
+          "Git"
+        ],
+        "project_type": "Team"
+      }
+    ],
+    "certifications": []
+  }
+}

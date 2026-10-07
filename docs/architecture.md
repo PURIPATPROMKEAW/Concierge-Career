@@ -1,15 +1,40 @@
 # Architecture
 
-Browser → frontend service → FastAPI route → CareerService → repository / ConciergeAgent → PostgreSQL / AIProvider.
+Profile first, career second. Numerical results come only from FastAPI's deterministic Python engine. The frontend displays API results; the AI provider explains computed facts.
 
-The frontend owns presentation and interaction state. It imports generated OpenAPI types, never backend or AI implementation code. Local demo mode reads a shared fixture; API mode uses HTTP with timeout and visible failure states.
+```mermaid
+flowchart TD
+  A[Text resume or manual background] --> B[Mock extraction and alias normalization]
+  B --> C[User reviews structured profile]
+  C --> D[Profile repository]
+  D --> E[Choose career interest]
+  E --> F[Query structured demo jobs]
+  F --> G[Deterministic Python matching]
+  D --> G
+  G --> H[Scores, ranking, demand, gaps]
+  H --> I[Mock explanations]
+  H --> J[Next.js result views]
+  I --> J
+  J --> K[Learning or manual update]
+  K --> D
+```
 
-The backend is the composition boundary. Routes validate output and translate infrastructure errors. Services orchestrate, repositories load data, and the AI layer handles matching/recommendations without depending on FastAPI or SQLAlchemy. Only MockAIProvider is implemented. Add a live provider behind AIProvider after agreeing on consent, costs, structured validation, timeouts, and evaluation.
+| Layer | Responsibility |
+| --- | --- |
+| Next.js | Landing, forms, contextual views, navigation, loading/error states |
+| Routes / Pydantic | Validate input; serialize output contracts; 404/415/422 errors |
+| Services | Analysis aggregation, alternatives, learning, feedback loop |
+| Repositories | Persistence and profile revisions |
+| Matching | Pure deterministic scores, demand, priorities and ranking |
+| AI | Known alias extraction and contextual explanations; no score authority |
+| Database | Jobs, careers, requirements, profiles, saved jobs and progress |
 
-PostgreSQL stores a minimal career profile today. Demo mode explicitly bypasses it. Database failures in database mode return 503, never quietly become demo mode. Alembic owns schema changes; seeding does not overwrite existing profiles.
+Each demo clones Alex to a new UUID. The browser stores that ID; records persist in SQLite or PostgreSQL. Reload can reopen the profile and reanalyze a career. Edits increment the revision; results include profile/dataset versions. Scores are recalculated rather than cached.
 
-Shared contract: Pydantic → exported OpenAPI → generated TypeScript. Test verifies the backend mock response matches the frontend fixture. Sample matching is normalized, deduplicated equal-weight required-skill coverage; it is not a readiness or employment prediction.
+Resume uploads are restricted to UTF-8 text and 1 MB. Files are read in memory and discarded. Known aliases become suggested Beginner skills for user review. Personal information, projects, education and experience are manually entered or explicitly loaded from the demo fixture.
 
-Planned schema expansion: users, goals, skills/user_skills, projects, experiences, jobs/job_skills, roadmaps/milestones/tasks, learning resources, saved jobs, applications, progress events, conversations/messages, and memory. Add migrations as features land, rather than creating unused tables now.
+Completion is idempotent per profile/resource. It raises proficiency to at least the learning outcome level, records progress, increments revision, and returns before/after analysis. This is clearly labeled simulated learning.
 
-Local demo has no authentication or user isolation. Before public deployment add authentication, authorization, ownership checks, upload limits and validation, rate limits, logging/redaction, secrets management, and retention/deletion controls. Do not connect real candidate records to this scaffold.
+Pydantic output schemas generate OpenAPI and frontend response types. The generator models serialized defaults as present and is intended for response shapes, not as request-required-field policy.
+
+The prototype runs one local API process. Production needs authentication/ownership enforcement, upload hardening, rate limits, coordinated migrations, and concurrent progress handling. No external service is required at runtime. Configured database errors remain visible rather than silently switching storage.

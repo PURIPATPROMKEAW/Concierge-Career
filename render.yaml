@@ -1,0 +1,52 @@
+services:
+  - type: web
+    name: concierge-career-api
+    runtime: python
+    plan: free
+    region: singapore
+    repo: https://github.com/PURIPATPROMKEAW/Concierge-Career
+    branch: feature/ai-career-concierge-demo
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: DATABASE_URL
+        fromDatabase:
+          name: concierge-career-db
+          property: connectionString
+      - key: REQUIRE_PROFILE_OWNERSHIP
+        value: "true"
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: CORS_ORIGINS
+        value: ""
+  - type: web
+    name: concierge-career-web
+    runtime: node
+    plan: free
+    region: singapore
+    repo: https://github.com/PURIPATPROMKEAW/Concierge-Career
+    branch: feature/ai-career-concierge-demo
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm exec next start frontend --hostname 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NEXT_PUBLIC_API_URL
+        value: /api
+      - key: BACKEND_HOST
+        fromService:
+          name: concierge-career-api
+          type: web
+          envVarKey: RENDER_EXTERNAL_HOSTNAME
+databases:
+  - name: concierge-career-db
+    plan: free
+    region: singapore
+    postgresMajorVersion: "17"
+    databaseName: concierge
+    user: concierge
+    ipAllowList: []
