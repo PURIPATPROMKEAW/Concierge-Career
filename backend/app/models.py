@@ -116,6 +116,8 @@ class Progress(Base):
     __tablename__ = "learning_progress"
     profile_id: Mapped[str] = mapped_column(ForeignKey("career_profiles.id"), primary_key=True)
     resource_id: Mapped[str] = mapped_column(ForeignKey("learning_resources.id"), primary_key=True)
+    completed_at: Mapped[str | None]
+    summary: Mapped[dict | None] = mapped_column(JSON)
 
 
 class SavedJob(Base):

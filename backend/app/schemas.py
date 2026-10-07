@@ -166,8 +166,10 @@ class LearningOutput(BaseModel):
     description: str
     outcome_level: int
     steps: list[str]
-    gap: GapOutput
+    gap: GapOutput | None
     completed: bool
+    completed_at: str | None = None
+    summary: dict | None = None
 
 
 class AlternativeOutput(BaseModel):

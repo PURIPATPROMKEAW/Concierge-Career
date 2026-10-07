@@ -100,3 +100,16 @@ def test_ties_have_stable_id_order():
     a = {**j, "id": "a"}
     b = {**j, "id": "b"}
     assert [r["id"] for r in analyze(alex, [b, a], catalog)["jobs"]] == ["a", "b"]
+
+
+def test_catalog_has_varied_demand_and_demo_alignment_states():
+    frontend = analyze(alex, jobs, catalog)
+    assert len({d["percent"] for d in frontend["demand"]}) > 1
+    scientist = analyze(alex, [j for j in data["jobs"] if j["career_id"] == "scientist"], catalog)
+    assert scientist["readiness"] == 24
+    assert len({d["percent"] for d in scientist["demand"]}) > 1
+    matches = [match(alex, j, catalog) for j in data["jobs"]]
+    assert any(j["score"] >= 85 for j in matches)
+    assert any(70 <= j["score"] < 85 for j in matches)
+    assert any(j["score"] < 70 for j in matches)
+    assert any(j["critical_missing"] for j in matches)

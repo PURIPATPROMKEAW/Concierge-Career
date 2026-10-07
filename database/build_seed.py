@@ -4,6 +4,7 @@ import json
 import random
 from pathlib import Path
 from backend.app.matching import match, analyze
+from database.demo_enrichment import enrich
 
 SKILL_GROUPS = {
     "Web development": [
@@ -332,6 +333,7 @@ data = {
     "alex": alex,
 }
 front = [j for j in jobs if j["career_id"] == "frontend"]
+enrich(data)
 a, b = analyze(alex, front, catalog), analyze(improved, front, catalog)
 assert (a["readiness"], b["readiness"]) == (78, 85), (a["readiness"], b["readiness"])
 assert a["gaps"][0]["skill_id"] == "typescript", a["gaps"]

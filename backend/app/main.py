@@ -56,7 +56,7 @@ def health():
         "status": "ok",
         "database": engine.dialect.name,
         "ai_provider": "mock",
-        "dataset_version": "2026.10-demo-v1",
+        "dataset_version": repo.seed_data()["version"],
     }
 
 
@@ -243,6 +243,15 @@ def save_job(user_id: str, job_id: str, db=Depends(get_db)):
         db.add(SavedJob(profile_id=user_id, job_id=job_id))
         db.commit()
     return saved(user_id, db)
+
+
+@app.get("/api/users/{user_id}/saved-job-matches", response_model=list[JobMatchOutput])
+def saved_matches(user_id: str, db=Depends(get_db)):
+    profile = repo.profile_dict(services.require_profile(db, user_id))
+    ids = set(saved(user_id, db))
+    catalog = repo.skill_catalog(db)
+    matches = [match(profile, j, catalog) for j in repo.all_jobs(db) if j["id"] in ids]
+    return sorted(matches, key=lambda j: (-j["raw_score"], j["id"]))
 
 
 @app.delete("/api/users/{user_id}/saved-jobs/{job_id}")

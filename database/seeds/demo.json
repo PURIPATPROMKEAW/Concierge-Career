@@ -1,5 +1,5 @@
 {
-  "version": "2026.10-demo-v1",
+  "version": "2026.10-demo-v2",
   "skills": [
     {
       "id": "html",
@@ -404,73 +404,73 @@
       "id": "frontend",
       "name": "Frontend Developer",
       "group": "Software Development",
-      "description": "Build useful software and thoughtful digital experiences."
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard."
     },
     {
       "id": "backend",
       "name": "Backend Developer",
       "group": "Software Development",
-      "description": "Build useful software and thoughtful digital experiences."
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions."
     },
     {
       "id": "fullstack",
       "name": "Full-stack Developer",
       "group": "Software Development",
-      "description": "Build useful software and thoughtful digital experiences."
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature."
     },
     {
       "id": "software",
       "name": "Software Engineer",
       "group": "Software Development",
-      "description": "Build useful software and thoughtful digital experiences."
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module."
     },
     {
       "id": "analyst",
       "name": "Data Analyst",
       "group": "Data",
-      "description": "Turn data into clarity, decisions, and reliable systems."
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours."
     },
     {
       "id": "scientist",
       "name": "Data Scientist",
       "group": "Data",
-      "description": "Turn data into clarity, decisions, and reliable systems."
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty."
     },
     {
       "id": "data-engineer",
       "name": "Data Engineer",
       "group": "Data",
-      "description": "Turn data into clarity, decisions, and reliable systems."
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse."
     },
     {
       "id": "ai",
       "name": "AI Engineer",
       "group": "Artificial Intelligence",
-      "description": "Create intelligent systems grounded in data."
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses."
     },
     {
       "id": "ml-engineer",
       "name": "Machine Learning Engineer",
       "group": "Artificial Intelligence",
-      "description": "Create intelligent systems grounded in data."
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks."
     },
     {
       "id": "devops",
       "name": "DevOps Engineer",
       "group": "Infrastructure",
-      "description": "Keep modern systems reliable, scalable, and connected."
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring."
     },
     {
       "id": "cloud",
       "name": "Cloud Engineer",
       "group": "Infrastructure",
-      "description": "Keep modern systems reliable, scalable, and connected."
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service."
     },
     {
       "id": "security",
       "name": "Cybersecurity Analyst",
       "group": "Cybersecurity",
-      "description": "Protect systems and investigate emerging threats."
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response."
     }
   ],
   "jobs": [
@@ -493,7 +493,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -564,7 +564,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -573,10 +573,10 @@
           "minimum_proficiency": 2
         },
         {
-          "skill_id": "css",
+          "skill_id": "sql",
           "requirement_type": "required",
           "importance": "low",
-          "minimum_proficiency": 2
+          "minimum_proficiency": 1
         },
         {
           "skill_id": "javascript",
@@ -635,13 +635,13 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
-          "skill_id": "html",
+          "skill_id": "sql",
           "requirement_type": "required",
           "importance": "medium",
-          "minimum_proficiency": 2
+          "minimum_proficiency": 1
         },
         {
           "skill_id": "css",
@@ -706,7 +706,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -777,7 +777,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Nexa Systems on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -786,7 +786,7 @@
           "minimum_proficiency": 1
         },
         {
-          "skill_id": "css",
+          "skill_id": "sql",
           "requirement_type": "required",
           "importance": "low",
           "minimum_proficiency": 1
@@ -848,10 +848,10 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with DataForge on this fictional demo position.",
       "requirements": [
         {
-          "skill_id": "html",
+          "skill_id": "sql",
           "requirement_type": "required",
           "importance": "medium",
           "minimum_proficiency": 1
@@ -919,7 +919,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join CloudGrid to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with CloudGrid on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -990,7 +990,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Vertex Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your frontend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Build accessible screens, interactive forms, and responsive interfaces. Example: a room-booking dashboard. Collaborate with Vertex Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "html",
@@ -999,10 +999,10 @@
           "minimum_proficiency": 2
         },
         {
-          "skill_id": "css",
+          "skill_id": "sql",
           "requirement_type": "required",
           "importance": "high",
-          "minimum_proficiency": 2
+          "minimum_proficiency": 1
         },
         {
           "skill_id": "javascript",
@@ -1061,7 +1061,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1078,12 +1078,6 @@
         {
           "skill_id": "git",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "rest",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
         },
@@ -1114,7 +1108,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1167,7 +1161,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1189,12 +1183,6 @@
         },
         {
           "skill_id": "rest",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "python",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1220,7 +1208,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1237,12 +1225,6 @@
         {
           "skill_id": "git",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "rest",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -1273,7 +1255,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with Nexa Systems on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1326,7 +1308,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your backend developer skills. This is a fictional position created for the competition demo.",
+      "description": "Design APIs, validate requests, and store reliable data. Example: booking endpoints and transactions. Collaborate with DataForge on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "node",
@@ -1348,12 +1330,6 @@
         },
         {
           "skill_id": "rest",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "python",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1379,7 +1355,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "javascript",
@@ -1401,12 +1377,6 @@
         },
         {
           "skill_id": "sql",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "git",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
@@ -1438,7 +1408,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "javascript",
@@ -1497,7 +1467,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "javascript",
@@ -1525,12 +1495,6 @@
         },
         {
           "skill_id": "git",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "typescript",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1556,7 +1520,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your full-stack developer skills. This is a fictional position created for the competition demo.",
+      "description": "Connect interfaces, APIs, and databases. Example: an end-to-end reservation feature. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "javascript",
@@ -1578,12 +1542,6 @@
         },
         {
           "skill_id": "sql",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "git",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1615,7 +1573,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "java",
@@ -1668,7 +1626,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "java",
@@ -1690,12 +1648,6 @@
         },
         {
           "skill_id": "testing",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "sql",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1721,7 +1673,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "java",
@@ -1738,12 +1690,6 @@
         {
           "skill_id": "git",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "testing",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -1774,7 +1720,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "java",
@@ -1827,7 +1773,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your software engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design maintainable application logic and tests. Example: a reusable scheduling module. Collaborate with Nexa Systems on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "java",
@@ -1849,12 +1795,6 @@
         },
         {
           "skill_id": "testing",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "sql",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -1880,7 +1820,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -1897,12 +1837,6 @@
         {
           "skill_id": "powerbi",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "statistics",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
         },
@@ -1933,7 +1867,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -1986,7 +1920,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -2008,12 +1942,6 @@
         },
         {
           "skill_id": "statistics",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "python",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2039,7 +1967,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -2056,12 +1984,6 @@
         {
           "skill_id": "powerbi",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "statistics",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -2092,7 +2014,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with Nexa Systems on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -2145,7 +2067,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join DataForge to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Clean business data and communicate patterns. Example: reporting room usage and peak hours. Collaborate with DataForge on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "sql",
@@ -2167,12 +2089,6 @@
         },
         {
           "skill_id": "statistics",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "python",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2198,7 +2114,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2215,12 +2131,6 @@
         {
           "skill_id": "ml",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "pandas",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
         },
@@ -2251,7 +2161,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2304,7 +2214,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2326,12 +2236,6 @@
         },
         {
           "skill_id": "pandas",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "sql",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2357,7 +2261,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data scientist skills. This is a fictional position created for the competition demo.",
+      "description": "Explore data and evaluate predictive models. Example: forecasting booking demand with uncertainty. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2374,12 +2278,6 @@
         {
           "skill_id": "ml",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "pandas",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -2410,7 +2308,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2463,7 +2361,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2485,12 +2383,6 @@
         },
         {
           "skill_id": "postgres",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "aws",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2516,7 +2408,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2533,12 +2425,6 @@
         {
           "skill_id": "etl",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "postgres",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -2569,7 +2455,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your data engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Build pipelines and dependable datasets. Example: loading reservation events into a warehouse. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2622,7 +2508,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2644,12 +2530,6 @@
         },
         {
           "skill_id": "rest",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "docker",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
@@ -2675,7 +2555,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2692,12 +2572,6 @@
         {
           "skill_id": "pytorch",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "rest",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -2728,7 +2602,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2781,7 +2655,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your ai engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Integrate model capabilities into evaluated applications. Example: a help assistant with structured responses. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2803,12 +2677,6 @@
         },
         {
           "skill_id": "rest",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "docker",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2834,7 +2702,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2851,12 +2719,6 @@
         {
           "skill_id": "tensorflow",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 1
-        },
-        {
-          "skill_id": "statistics",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 1
         },
@@ -2887,7 +2749,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2940,7 +2802,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -2962,12 +2824,6 @@
         },
         {
           "skill_id": "statistics",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "docker",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -2993,7 +2849,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your machine learning engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Train, deploy, and monitor models. Example: a demand prediction service with drift checks. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "python",
@@ -3010,12 +2866,6 @@
         {
           "skill_id": "tensorflow",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "statistics",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -3046,7 +2896,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "linux",
@@ -3099,7 +2949,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "linux",
@@ -3121,12 +2971,6 @@
         },
         {
           "skill_id": "aws",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "git",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -3152,7 +2996,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your devops engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Automate delivery and improve reliability. Example: a tested deployment pipeline with monitoring. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "linux",
@@ -3169,12 +3013,6 @@
         {
           "skill_id": "cicd",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "aws",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -3205,7 +3043,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "aws",
@@ -3258,7 +3096,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "aws",
@@ -3280,12 +3118,6 @@
         },
         {
           "skill_id": "networking",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "docker",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -3311,7 +3143,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cloud engineer skills. This is a fictional position created for the competition demo.",
+      "description": "Design cloud networks, compute, and storage. Example: a secure, cost-aware booking service. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "aws",
@@ -3328,12 +3160,6 @@
         {
           "skill_id": "linux",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "networking",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -3364,7 +3190,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join NovaTech to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with NovaTech on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "security",
@@ -3417,7 +3243,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Orbit Labs to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with Orbit Labs on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "security",
@@ -3439,12 +3265,6 @@
         },
         {
           "skill_id": "linux",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "incident",
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
@@ -3470,7 +3290,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join ByteWorks to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with ByteWorks on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "security",
@@ -3487,12 +3307,6 @@
         {
           "skill_id": "networking",
           "requirement_type": "required",
-          "importance": "medium",
-          "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "linux",
-          "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
         },
@@ -3523,7 +3337,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join BluePeak to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with BluePeak on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "security",
@@ -3576,7 +3390,7 @@
       ],
       "accepts_enrolled": true,
       "source_type": "fictional_demo",
-      "description": "Join Nexa Systems to build practical solutions with a supportive engineering team. Work on real-world project scenarios, collaborate through code reviews, and develop your cybersecurity analyst skills. This is a fictional position created for the competition demo.",
+      "description": "Investigate threats and reduce risks. Example: detecting suspicious booking access and planning a response. Collaborate with Nexa Systems on this fictional demo position.",
       "requirements": [
         {
           "skill_id": "security",
@@ -3601,12 +3415,6 @@
           "requirement_type": "preferred",
           "importance": "medium",
           "minimum_proficiency": 2
-        },
-        {
-          "skill_id": "incident",
-          "requirement_type": "preferred",
-          "importance": "medium",
-          "minimum_proficiency": 2
         }
       ]
     }
@@ -3618,12 +3426,12 @@
       "title": "TypeScript Fundamentals",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in TypeScript.",
+      "description": "Convert the Room Booking form to TypeScript with typed room, date, and reservation fields.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of TypeScript.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Convert the Room Booking form to TypeScript with typed room, date, and reservation fields.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3632,12 +3440,12 @@
       "title": "Frontend Testing Fundamentals",
       "resource_type": "Workshop",
       "duration": "5 hours",
-      "description": "A curated demo learning activity to build practical confidence in Frontend Testing.",
+      "description": "Test duplicate reservations, invalid dates, and a successful Room Booking submission.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Frontend Testing.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Test duplicate reservations, invalid dates, and a successful Room Booking submission.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3646,12 +3454,12 @@
       "title": "React Component Patterns",
       "resource_type": "Mini project",
       "duration": "8 hours",
-      "description": "A curated demo learning activity to build practical confidence in React.",
+      "description": "Split Room Booking into controlled React components with reusable validation state.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of React.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Split Room Booking into controlled React components with reusable validation state.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3660,12 +3468,12 @@
       "title": "HTML Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in HTML.",
+      "description": "Add semantic labels, fieldsets, and keyboard controls to the Room Booking form.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of HTML.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Add semantic labels, fieldsets, and keyboard controls to the Room Booking form.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3674,12 +3482,12 @@
       "title": "CSS Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in CSS.",
+      "description": "Make the Personal Portfolio layout work at 320px and 1440px without hiding content.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of CSS.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Make the Personal Portfolio layout work at 320px and 1440px without hiding content.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3688,12 +3496,12 @@
       "title": "JavaScript Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in JavaScript.",
+      "description": "Validate booking dates and display useful errors before form submission.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of JavaScript.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Validate booking dates and display useful errors before form submission.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3702,12 +3510,12 @@
       "title": "Next.js Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Next.js.",
+      "description": "Add a booking detail route with loading and not-found states.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Next.js.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Add a booking detail route with loading and not-found states.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3716,12 +3524,12 @@
       "title": "Git Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Git.",
+      "description": "Use a feature branch to review and resolve a booking-form merge conflict.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Git.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Use a feature branch to review and resolve a booking-form merge conflict.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3730,12 +3538,12 @@
       "title": "REST APIs Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in REST APIs.",
+      "description": "Design booking API responses for successful requests, missing rooms, and overlapping dates.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of REST APIs.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Design booking API responses for successful requests, missing rooms, and overlapping dates.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3744,12 +3552,12 @@
       "title": "Node.js Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Node.js.",
+      "description": "Implement a validated booking endpoint in Node.js.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Node.js.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Implement a validated booking endpoint in Node.js.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3758,12 +3566,12 @@
       "title": "Python Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Python.",
+      "description": "Clean a synthetic booking CSV and summarize reservations by weekday.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Python.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Clean a synthetic booking CSV and summarize reservations by weekday.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3772,12 +3580,12 @@
       "title": "Java Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Java.",
+      "description": "Model rooms and reservations as Java classes with validation methods.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Java.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Model rooms and reservations as Java classes with validation methods.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3786,12 +3594,12 @@
       "title": "Object-oriented Programming Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Object-oriented Programming.",
+      "description": "Separate booking availability rules from persistence using interfaces.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Object-oriented Programming.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Separate booking availability rules from persistence using interfaces.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3800,12 +3608,12 @@
       "title": "SQL Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in SQL.",
+      "description": "Query available rooms, reservation totals, and overlapping bookings.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of SQL.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Query available rooms, reservation totals, and overlapping bookings.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3814,12 +3622,12 @@
       "title": "PostgreSQL Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in PostgreSQL.",
+      "description": "Create PostgreSQL room and booking tables with foreign keys and a transaction.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of PostgreSQL.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Create PostgreSQL room and booking tables with foreign keys and a transaction.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3828,12 +3636,12 @@
       "title": "Excel Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Excel.",
+      "description": "Build a pivot table showing peak hours from synthetic booking records.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Excel.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Build a pivot table showing peak hours from synthetic booking records.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3842,12 +3650,12 @@
       "title": "Power BI Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Power BI.",
+      "description": "Create a room-utilization report with date and location filters.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Power BI.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Create a room-utilization report with date and location filters.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3856,12 +3664,12 @@
       "title": "ETL Pipelines Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in ETL Pipelines.",
+      "description": "Build a repeatable validation and loading pipeline for booking events.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of ETL Pipelines.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Build a repeatable validation and loading pipeline for booking events.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3870,12 +3678,12 @@
       "title": "Statistics Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Statistics.",
+      "description": "Compare weekday booking averages and explain a confidence interval.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Statistics.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Compare weekday booking averages and explain a confidence interval.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3884,12 +3692,12 @@
       "title": "Pandas Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Pandas.",
+      "description": "Clean missing dates and duplicate rows in a booking dataset with Pandas.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Pandas.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Clean missing dates and duplicate rows in a booking dataset with Pandas.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3898,12 +3706,12 @@
       "title": "Machine Learning Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Machine Learning.",
+      "description": "Evaluate a booking-demand baseline on a held-out time period.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Machine Learning.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Evaluate a booking-demand baseline on a held-out time period.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3912,12 +3720,12 @@
       "title": "TensorFlow Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in TensorFlow.",
+      "description": "Compare a small TensorFlow demand model with a simple baseline.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of TensorFlow.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Compare a small TensorFlow demand model with a simple baseline.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3926,12 +3734,12 @@
       "title": "PyTorch Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in PyTorch.",
+      "description": "Build a PyTorch training loop with a separate validation set.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of PyTorch.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Build a PyTorch training loop with a separate validation set.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3940,12 +3748,12 @@
       "title": "Linux Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Linux.",
+      "description": "Inspect booking service logs, processes, and file permissions.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Linux.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Inspect booking service logs, processes, and file permissions.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3954,12 +3762,12 @@
       "title": "Docker Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Docker.",
+      "description": "Containerize a booking API and verify its health endpoint.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Docker.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Containerize a booking API and verify its health endpoint.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3968,12 +3776,12 @@
       "title": "AWS Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in AWS.",
+      "description": "Sketch AWS hosting for the booking app with access rules and cost assumptions.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of AWS.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Sketch AWS hosting for the booking app with access rules and cost assumptions.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3982,12 +3790,12 @@
       "title": "CI/CD Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in CI/CD.",
+      "description": "Test the booking API before building a deployment artifact in CI.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of CI/CD.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Test the booking API before building a deployment artifact in CI.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -3996,12 +3804,12 @@
       "title": "Terraform Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Terraform.",
+      "description": "Describe a booking-service environment using reusable Terraform variables.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Terraform.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Describe a booking-service environment using reusable Terraform variables.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -4010,12 +3818,12 @@
       "title": "Networking Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Networking.",
+      "description": "Trace a booking request through DNS, HTTPS, and the application service.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Networking.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Trace a booking request through DNS, HTTPS, and the application service.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -4024,12 +3832,12 @@
       "title": "Security Analysis Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Security Analysis.",
+      "description": "Threat-model the booking form and propose controls for three concrete risks.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Security Analysis.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Threat-model the booking form and propose controls for three concrete risks.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -4038,12 +3846,12 @@
       "title": "SIEM Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in SIEM.",
+      "description": "Detect repeated failed booking access in synthetic log records.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of SIEM.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Detect repeated failed booking access in synthetic log records.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     },
     {
@@ -4052,12 +3860,12 @@
       "title": "Incident Response Foundations",
       "resource_type": "Guided practice",
       "duration": "6 hours",
-      "description": "A curated demo learning activity to build practical confidence in Incident Response.",
+      "description": "Write a timeline and containment plan for synthetic suspicious booking activity.",
       "outcome_level": 2,
       "steps": [
-        "Review the core concepts of Incident Response.",
-        "Apply the concepts in a small working example.",
-        "Document what you learned and add evidence to your profile."
+        "Write a timeline and containment plan for synthetic suspicious booking activity.",
+        "Show one successful example and one edge case in your demo project.",
+        "Record the result, explain your choices, and add evidence to your portfolio."
       ]
     }
   ],

@@ -29,11 +29,13 @@ export default function ProfileEditor({
   catalog,
   onSave,
   busy,
+  careerName,
 }: {
   initial: Profile;
   catalog: Skill[];
   onSave: (p: Profile) => void;
   busy: boolean;
+  careerName?: string;
 }) {
   const [p, setP] = useState<Profile>(structuredClone(initial));
   const [tab, setTab] = useState("Basics");
@@ -260,7 +262,7 @@ export default function ProfileEditor({
                   })
                 }
               >
-                <option value="">Choose a canonical skill…</option>
+                <option value="">Search or choose a skill</option>
                 {catalog
                   .filter((c) => !p.skills.some((s) => s.skill_id === c.id))
                   .map((c) => (
@@ -287,7 +289,7 @@ export default function ProfileEditor({
                     ] as const
                   ).map((k) => (
                     <label className="field" key={k}>
-                      {k.replace("_", " ")}
+                      {k === "field" ? "Field of study" : k.replace("_", " ")}
                       <input
                         type={k.includes("year") ? "number" : "text"}
                         value={item[k]}
@@ -387,34 +389,32 @@ export default function ProfileEditor({
                       />
                     </label>
                   ))}
-                  <label className="field">
-                    Skills used (hold Ctrl / Cmd to select multiple)
-                    <select
-                      multiple
-                      value={item.skills}
-                      onChange={(e) =>
-                        patch({
-                          experiences: p.experiences.map((x, j) =>
-                            j === i
-                              ? {
-                                  ...x,
-                                  skills: Array.from(
-                                    e.target.selectedOptions,
-                                    (o) => o.value,
-                                  ),
-                                }
-                              : x,
-                          ),
-                        })
-                      }
-                    >
-                      {catalog.map((s) => (
-                        <option key={s.id} value={s.id}>
-                          {s.name}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
+                  <fieldset className="skill-checkboxes">
+                    <legend>Skills used — select all that apply</legend>
+                    {catalog.map((s) => (
+                      <label className="check-label" key={s.id}>
+                        <input
+                          type="checkbox"
+                          checked={item.skills.includes(s.id)}
+                          onChange={(e) =>
+                            patch({
+                              experiences: p.experiences.map((x, j) =>
+                                j === i
+                                  ? {
+                                      ...x,
+                                      skills: e.target.checked
+                                        ? [...x.skills, s.id]
+                                        : x.skills.filter((id) => id !== s.id),
+                                    }
+                                  : x,
+                              ),
+                            })
+                          }
+                        />
+                        {s.name}
+                      </label>
+                    ))}
+                  </fieldset>
                 </div>
                 <button
                   type="button"
@@ -610,7 +610,11 @@ export default function ProfileEditor({
           )}
           <button className="button primary" disabled={busy || uploading}>
             {busy ? <Loader2 className="spin" size={16} /> : null}
-            {p.id ? "Save & review profile" : "Create My Career Profile"}
+            {p.id && careerName
+              ? `Save & re-analyze ${careerName}`
+              : p.id
+                ? "Save & review profile"
+                : "Create My Career Profile"}
             <ArrowRight size={16} />
           </button>
         </div>

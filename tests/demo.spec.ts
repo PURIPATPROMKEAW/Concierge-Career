@@ -16,7 +16,7 @@ test("Puripatjudhai: profile first, analysis, exact improvement, persistence and
   ).toBeVisible();
   await page.getByRole("button", { name: "Choose Career Interest" }).click();
   await page
-    .getByRole("button", { name: /Frontend Developer Build useful/ })
+    .getByRole("button", { name: /Frontend Developer/ })
     .click();
   await expect(
     page.getByRole("heading", {
@@ -64,6 +64,7 @@ test("Puripatjudhai: profile first, analysis, exact improvement, persistence and
     page.locator(".profile-skill").filter({ hasText: "TypeScript" }),
   ).toContainText("Intermediate");
   await page.getByRole("button", { name: "Reset demo", exact: true }).click();
+  await page.getByRole("button", { name: "Start fresh demo", exact: true }).click();
   await expect(
     page.locator(".profile-skill").filter({ hasText: "TypeScript" }),
   ).toHaveCount(0);

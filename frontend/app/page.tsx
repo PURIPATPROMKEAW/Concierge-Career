@@ -34,7 +34,6 @@ import {
   Loader2,
   CheckCircle2,
   TriangleAlert,
-  Search,
 } from "lucide-react";
 import type {
   Profile,
@@ -48,6 +47,8 @@ import type {
 } from "../lib/api-types";
 import { api, ApiError } from "../lib/api";
 import ProfileEditor, { emptyProfile } from "../components/ProfileEditor";
+import JobsBrowser from "../components/JobsBrowser";
+import CompletedLearning from "../components/CompletedLearning";
 
 type View =
   | "landing"
@@ -161,8 +162,16 @@ export default function App() {
   const [notice, setNotice] = useState("");
   const [health, setHealth] = useState("Connecting");
   const [connecting, setConnecting] = useState(false);
-  const [filter, setFilter] = useState("Best match");
-  const [search, setSearch] = useState("");
+  const [savedMatches, setSavedMatches] = useState<Job[]>([]);
+  const [booted, setBooted] = useState(false);
+  const [reviewed, setReviewed] = useState(false);
+  const [isDemo, setIsDemo] = useState(false);
+  const [freshConfirm, setFreshConfirm] = useState(false);
+  const [progressKind, setProgressKind] = useState("learning");
+  const [showAllDemand, setShowAllDemand] = useState(false);
+  const [careerJobs, setCareerJobs] = useState<
+    { career_id: string; requirements: { skill_id: string }[] }[]
+  >([]);
   const [chatOpen, setChatOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [answer, setAnswer] = useState("");
@@ -182,27 +191,32 @@ export default function App() {
         "gaps",
         "learning",
         "alternatives",
-        "saved",
       ].includes(next)
     )
       next = "careers";
     setView(next);
     setMobileMenu(false);
     setError("");
+    setNotice("");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   async function initialize() {
+    setBooted(false);
     setConnecting(true);
     setHealth("Connecting");
     setError("");
     try {
       const h = await api<{ database: string }>("/health");
-      const [s, c] = await Promise.all([
+      const [s, c, jobs] = await Promise.all([
         api<Skill[]>("/skills"),
         api<Career[]>("/careers"),
+        api<{ career_id: string; requirements: { skill_id: string }[] }[]>(
+          "/jobs",
+        ),
       ]);
       setSkills(s);
       setCareers(c);
+      setCareerJobs(jobs);
       setHealth(h.database);
       const id = localStorage.getItem("concierge-profile");
       if (id) {
@@ -210,14 +224,58 @@ export default function App() {
           const p = await api<Profile>("/profile/" + id);
           setProfile(p);
           setDraft(p);
+          setIsDemo(localStorage.getItem("concierge-is-demo") === "true");
+          await refreshSaved(p);
+          let ctx: {
+            career?: string;
+            view?: View;
+            job?: string;
+            reviewed?: boolean;
+          } = {};
+          try {
+            ctx = JSON.parse(
+              localStorage.getItem("concierge-workspace") || "{}",
+            );
+          } catch {
+            /* Ignore invalid local state. */
+          }
+          setReviewed(Boolean(ctx.reviewed));
+          if (ctx.career && c.some((career) => career.id === ctx.career)) {
+            await fetchContext(p, ctx.career);
+            if (ctx.view === "detail" && ctx.job) {
+              const job = await api<Job>(
+                `/jobs/${ctx.job}/match?user_id=${p.id}`,
+              );
+              setSelectedJob(job);
+              setView("detail");
+            } else if (
+              [
+                "landing",
+                "profile",
+                "careers",
+                "overview",
+                "jobs",
+                "gaps",
+                "learning",
+                "alternatives",
+                "saved",
+              ].includes(ctx.view || "")
+            ) {
+              setView(ctx.view!);
+            } else setView("overview");
+          } else setView(ctx.view === "saved" ? "saved" : "profile");
         } catch (e) {
           if (e instanceof ApiError && e.status === 404) {
             localStorage.removeItem("concierge-profile");
+            localStorage.removeItem("concierge-workspace");
+            setProfile(null);
+            setAnalysis(null);
           } else {
             throw e;
           }
         }
       }
+      setBooted(true);
     } catch (e) {
       setHealth("Offline");
       setError((e as Error).message);
@@ -229,6 +287,9 @@ export default function App() {
     void initialize();
   }, []);
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [view]);
+  useEffect(() => {
     if (!processing) return;
     setProcessingStep(0);
     const t = setInterval(
@@ -237,6 +298,85 @@ export default function App() {
     );
     return () => clearInterval(t);
   }, [processing]);
+  useEffect(() => {
+    if (!booted || connecting || !profile?.id) return;
+    localStorage.setItem(
+      "concierge-workspace",
+      JSON.stringify({
+        career: analysis?.career.id,
+        view,
+        job: selectedJob?.id,
+        reviewed,
+      }),
+    );
+    localStorage.setItem("concierge-is-demo", String(isDemo));
+  }, [
+    booted,
+    connecting,
+    profile?.id,
+    analysis?.career.id,
+    view,
+    selectedJob?.id,
+    reviewed,
+    isDemo,
+  ]);
+  useEffect(() => {
+    if (!notice) return;
+    const timer = setTimeout(() => setNotice(""), 5500);
+    return () => clearTimeout(timer);
+  }, [notice]);
+  async function refreshSaved(p: Profile) {
+    const matches = await api<Job[]>(`/users/${p.id}/saved-job-matches`);
+    setSavedMatches(matches);
+    setSaved(matches.map((j) => j.id));
+  }
+  async function fetchContext(p: Profile, id: string) {
+    const a = await api<Analysis>("/analysis/career", "POST", {
+      user_id: p.id,
+      career_id: id,
+    });
+    setAnalysis(a);
+    setCareerId(id);
+    const [r, alt] = await Promise.all([
+      api<Resource[]>(
+        `/learning-recommendations?user_id=${p.id}&career_id=${id}`,
+      ),
+      api<Alternative[]>(`/users/${p.id}/alternative-careers?career_id=${id}`),
+      refreshSaved(p),
+    ]);
+    setResources(r);
+    setAlternatives(alt);
+    return a;
+  }
+  async function openJob(job: Job) {
+    if (!profile?.id) return;
+    setProcessing("analysis");
+    await run(async () => {
+      await fetchContext(profile, job.career_id);
+      setSelectedJob(
+        await api<Job>(`/jobs/${job.id}/match?user_id=${profile.id}`),
+      );
+      setProgress(null);
+      setNotice("");
+      setView("detail");
+    });
+    setProcessing("");
+  }
+  async function startFresh() {
+    setFreshConfirm(false);
+    setProcessing("profile");
+    await run(async () => {
+      const p = profile?.id
+        ? await api<Profile>(`/demo/reset/${profile.id}`, "POST")
+        : await api<Profile>("/demo/profile", "POST");
+      setIsDemo(true);
+      await showProfile(p);
+      setNotice(
+        "Fresh demo started. Previous demo progress and saved jobs were reset.",
+      );
+    });
+    setProcessing("");
+  }
   async function run<T>(fn: () => Promise<T>): Promise<T | undefined> {
     setBusy(true);
     setError("");
@@ -254,11 +394,17 @@ export default function App() {
     localStorage.setItem("concierge-profile", p.id!);
     setAnalysis(null);
     setSaved([]);
+    setSavedMatches([]);
+    setReviewed(false);
     setProgress(null);
-    await new Promise((r) => setTimeout(r, 1050));
     setView("profile");
   }
   async function demo() {
+    if (profile) {
+      go(analysis ? "overview" : "profile");
+      return;
+    }
+    setIsDemo(true);
     setProcessing("profile");
     await run(async () =>
       showProfile(await api<Profile>("/demo/profile", "POST")),
@@ -267,15 +413,40 @@ export default function App() {
   }
   async function saveProfile(p: Profile) {
     setProcessing("profile");
-    await run(async () =>
-      showProfile(
-        await api<Profile>(
-          p.id ? "/profile/" + p.id : "/profile",
-          p.id ? "PUT" : "POST",
-          p,
-        ),
-      ),
-    );
+    await run(async () => {
+      const before =
+        p.id && analysis
+          ? await api<Analysis>("/analysis/career", "POST", {
+              user_id: p.id,
+              career_id: analysis.career.id,
+            })
+          : null;
+      const updated = await api<Profile>(
+        p.id ? "/profile/" + p.id : "/profile",
+        p.id ? "PUT" : "POST",
+        p,
+      );
+      if (before) {
+        setProfile(updated);
+        setDraft(updated);
+        setReviewed(true);
+        const after = await fetchContext(updated, before.career.id);
+        setProgress({
+          before,
+          after,
+          profile: updated,
+          already_completed: false,
+        });
+        setProgressKind("profile");
+        setSelectedJob(null);
+        setView("overview");
+      } else {
+        if (!p.id) setIsDemo(false);
+        await showProfile(updated);
+        setReviewed(true);
+        await refreshSaved(updated);
+      }
+    });
     setProcessing("");
   }
   async function loadAnalysis(id: string) {
@@ -283,26 +454,10 @@ export default function App() {
     setCareerId(id);
     setProcessing("analysis");
     await run(async () => {
-      const a = await api<Analysis>("/analysis/career", "POST", {
-        user_id: profile.id,
-        career_id: id,
-      });
-      setAnalysis(a);
+      await fetchContext(profile, id);
       setSelectedJob(null);
       setProgress(null);
-      const [r, alt, s] = await Promise.all([
-        api<Resource[]>(
-          `/learning-recommendations?user_id=${profile.id}&career_id=${id}`,
-        ),
-        api<Alternative[]>(
-          `/users/${profile.id}/alternative-careers?career_id=${id}`,
-        ),
-        api<string[]>(`/users/${profile.id}/saved-jobs`),
-      ]);
-      setResources(r);
-      setAlternatives(alt);
-      setSaved(s);
-      await new Promise((r) => setTimeout(r, 1000));
+      setNotice("");
       setView("overview");
     });
     setProcessing("");
@@ -317,6 +472,8 @@ export default function App() {
         resource_id: resource.id,
       });
       setProgress(result);
+      setProgressKind("learning");
+      await refreshSaved(result.profile);
       setProfile(result.profile);
       setDraft(result.profile);
       setAnalysis(result.after);
@@ -336,14 +493,13 @@ export default function App() {
     setProcessing("");
   }
   async function toggleSave(job: Job) {
-    await run(async () =>
-      setSaved(
-        await api<string[]>(
-          `/users/${profile!.id}/saved-jobs/${job.id}`,
-          saved.includes(job.id) ? "DELETE" : "PUT",
-        ),
-      ),
-    );
+    await run(async () => {
+      await api<string[]>(
+        `/users/${profile!.id}/saved-jobs/${job.id}`,
+        saved.includes(job.id) ? "DELETE" : "PUT",
+      );
+      await refreshSaved(profile!);
+    });
   }
   async function ask(text = message) {
     if (!text.trim() || !profile?.id) return;
@@ -365,6 +521,21 @@ export default function App() {
     }
   }
   function jobCard(job: Job, compact = false) {
+    const importance: Record<string, number> = {
+      critical: 4,
+      high: 3,
+      medium: 2,
+      low: 1,
+    };
+    const comparisons = [...job.comparisons].sort(
+      (a, b) =>
+        Number(b.requirement_type === "required") -
+          Number(a.requirement_type === "required") ||
+        (importance[b.importance] || 1) - (importance[a.importance] || 1) ||
+        b.minimum_proficiency - a.minimum_proficiency,
+    );
+    const matched = comparisons.filter((r) => r.status === "matched");
+    const gap = comparisons.find((r) => r.status !== "matched");
     return (
       <article
         className={"job-card " + (compact ? "compact" : "")}
@@ -383,8 +554,7 @@ export default function App() {
             <h3>
               <button
                 onClick={() => {
-                  setSelectedJob(job);
-                  go("detail");
+                  void openJob(job);
                 }}
               >
                 {job.title}
@@ -409,23 +579,18 @@ export default function App() {
         </div>
         <div className="job-card-bottom">
           <div className="tags">
-            {job.matched_skills.slice(0, 3).map((s) => (
+            {matched.slice(0, 3).map(({ name: s }) => (
               <span className="tag matched" key={s}>
                 <Check size={11} />
                 {s}
               </span>
             ))}
-            {(job.missing_skills[0] || job.partial_skills[0]) && (
-              <span className="tag gap">
-                Gap: {job.missing_skills[0] || job.partial_skills[0]}
-              </span>
-            )}
+            {gap && <span className="tag gap">Gap: {gap.name}</span>}
           </div>
           <button
             className="text-button"
             onClick={() => {
-              setSelectedJob(job);
-              go("detail");
+              void openJob(job);
             }}
           >
             View match
@@ -482,6 +647,7 @@ export default function App() {
                 <div className="button-row">
                   <button
                     className="button primary large"
+                    disabled={busy || connecting}
                     onClick={() => {
                       setDraft(emptyProfile);
                       go("edit");
@@ -493,12 +659,27 @@ export default function App() {
                   <button
                     className="button ghost large"
                     onClick={demo}
-                    disabled={busy}
+                    disabled={busy || connecting}
                   >
-                    Try demo profile
+                    {profile ? "Continue demo" : "Try demo profile"}
                     <ArrowUpRight size={17} />
                   </button>
                 </div>
+                {profile && (
+                  <button
+                    className="text-button fresh-demo-link"
+                    disabled={busy || connecting}
+                    onClick={() => setFreshConfirm(true)}
+                  >
+                    Start fresh demo — reset progress
+                  </button>
+                )}
+                {connecting && (
+                  <p className="connection-inline" role="status">
+                    Connecting to the career service. Actions will be ready when
+                    it responds.
+                  </p>
+                )}
                 <div className="hero-proof">
                   <span>
                     <CheckCircle2 size={14} />
@@ -650,7 +831,7 @@ export default function App() {
                 <button
                   className="button primary"
                   onClick={demo}
-                  disabled={busy}
+                  disabled={busy || connecting}
                 >
                   Meet Puripatjudhai. Try the demo
                   <ArrowRight size={16} />
@@ -723,7 +904,9 @@ export default function App() {
                 <span className="live-dot" />
                 {health === "Offline"
                   ? "Service offline"
-                  : `${health} · demo dataset`}
+                  : health === "Connecting"
+                    ? "Connecting to demo data"
+                    : "Demo job data"}
               </div>
               <div className="sidebar-person">
                 <div className="avatar">{profile?.name[0] || "Y"}</div>
@@ -809,7 +992,8 @@ export default function App() {
                     initial={draft}
                     catalog={skills}
                     onSave={saveProfile}
-                    busy={busy}
+                    busy={busy || connecting}
+                    careerName={analysis?.career.name}
                   />
                 </>
               )}
@@ -847,7 +1031,11 @@ export default function App() {
                           {profile.degree} · {profile.graduation_year}
                         </span>
                         <span className="tag blue">
-                          Profile reviewed by you
+                          {reviewed
+                            ? "Profile reviewed by you"
+                            : isDemo
+                              ? "Demo profile loaded · ready for review"
+                              : "Ready for review"}
                         </span>
                       </div>
                     </div>
@@ -859,6 +1047,18 @@ export default function App() {
                       <ArrowRight size={17} />
                     </button>
                   </section>
+                  {!reviewed && (
+                    <button
+                      className="button secondary review-button"
+                      onClick={() => {
+                        setReviewed(true);
+                        setNotice("Profile review confirmed.");
+                      }}
+                    >
+                      Confirm profile review
+                      <CheckCircle2 size={16} />
+                    </button>
+                  )}
                   <div className="stats-grid profile-stats">
                     {[
                       [profile.skills.length, "Skills identified"],
@@ -1055,6 +1255,28 @@ export default function App() {
                                 </div>
                                 <h3>{c.name}</h3>
                                 <p>{c.description}</p>
+                                <div className="tags">
+                                  {profile?.skills
+                                    .filter((s) =>
+                                      careerJobs.some(
+                                        (j) =>
+                                          j.career_id === c.id &&
+                                          j.requirements.some(
+                                            (r) => r.skill_id === s.skill_id,
+                                          ),
+                                      ),
+                                    )
+                                    .slice(0, 3)
+                                    .map((s) => (
+                                      <span
+                                        key={s.skill_id}
+                                        className="tag matched"
+                                      >
+                                        <Check size={11} />
+                                        {skillName(s.skill_id)}
+                                      </span>
+                                    ))}
+                                </div>
                                 <span className="career-card-cta">
                                   Explore my alignment
                                   <ArrowRight size={14} />
@@ -1066,6 +1288,14 @@ export default function App() {
                     </section>
                   ))}
                 </>
+              )}
+              {view === "saved" && profile && (
+                <JobsBrowser
+                  jobs={savedMatches}
+                  savedMode
+                  careers={careers}
+                  renderJob={jobCard}
+                />
               )}
               {analysis &&
                 [
@@ -1082,7 +1312,13 @@ export default function App() {
                       <>
                         <Heading
                           eyebrow="YOUR PROFILE × THE JOB MARKET"
-                          title={`Your next chapter looks promising, ${profile?.name}.`}
+                          title={
+                            analysis.readiness >= 70
+                              ? `Your next chapter looks promising, ${profile?.name}.`
+                              : analysis.readiness >= 50
+                                ? `A focused plan can move you forward, ${profile?.name}.`
+                                : `Build your foundation first, ${profile?.name}.`
+                          }
                           description="A little clarity goes a long way. Here’s where you stand, and where you can go next."
                           action={
                             <button
@@ -1104,10 +1340,7 @@ export default function App() {
                               <span className="eyebrow">
                                 PROGRESS THAT OPENS POSSIBILITIES
                               </span>
-                              <h2>
-                                Your profile improved. Your opportunities did,
-                                too.
-                              </h2>
+                              <h2>Your profile changed. Here is the impact.</h2>
                               <p>
                                 Career readiness{" "}
                                 <strong>
@@ -1121,8 +1354,13 @@ export default function App() {
                                 </strong>
                               </p>
                               <small>
-                                Demo learning completion recorded as a simulated
-                                skill gain.
+                                {progressKind === "learning"
+                                  ? "Demo learning completion recorded as a simulated skill gain."
+                                  : "Your saved profile was re-analyzed using the same matching engine."}
+                                <br />
+                                Next priority:{" "}
+                                {progress.before.gaps[0]?.name || "None"} →{" "}
+                                {progress.after.gaps[0]?.name || "None"}
                               </small>
                             </div>
                             <button
@@ -1288,6 +1526,40 @@ export default function App() {
                             </div>
                           </div>
                         </div>
+                        {analysis.readiness < 70 && (
+                          <section className="panel foundation-plan">
+                            <h2>
+                              Start with foundations; explore stronger
+                              alternatives
+                            </h2>
+                            <p>
+                              Focus on{" "}
+                              {analysis.gaps[0]?.name || "project evidence"}{" "}
+                              first. One skill may not be enough to reach 85:
+                              experience, education, and other requirements
+                              still count.
+                            </p>
+                            <div className="button-row">
+                              {alternatives.slice(0, 2).map((a) => (
+                                <button
+                                  className="button secondary"
+                                  key={a.career.id}
+                                  onClick={() => loadAnalysis(a.career.id)}
+                                >
+                                  {a.career.name} · {a.readiness}/100
+                                  <ArrowRight size={14} />
+                                </button>
+                              ))}
+                              <button
+                                className="text-button"
+                                onClick={() => go("learning")}
+                              >
+                                Start a practice task
+                                <BookOpen size={15} />
+                              </button>
+                            </div>
+                          </section>
+                        )}
                         <section className="insight-banner">
                           <div className="insight-icon">
                             <Sparkles size={20} />
@@ -1302,12 +1574,10 @@ export default function App() {
                                   Your next best move?{" "}
                                   <strong>{analysis.gaps[0].name}.</strong> It
                                   appears in {analysis.gaps[0].job_count} of{" "}
-                                  {analysis.jobs_analyzed} roles. Closing this
-                                  gap could move {analysis.gaps[0].unlocks}{" "}
-                                  {analysis.gaps[0].unlocks === 1
-                                    ? "opportunity"
-                                    : "opportunities"}{" "}
-                                  into “Ready to apply.”
+                                  {analysis.jobs_analyzed} roles.{" "}
+                                  {analysis.gaps[0].unlocks > 0
+                                    ? `Reaching its target could move ${analysis.gaps[0].unlocks} ${analysis.gaps[0].unlocks === 1 ? "opportunity" : "opportunities"} into “Ready to apply.”`
+                                    : "Start by building this foundation. This skill alone does not bring any position to Ready to apply; other gaps and experience still matter."}
                                 </>
                               ) : (
                                 <>
@@ -1376,29 +1646,51 @@ export default function App() {
                                 Skill demand across {analysis.jobs_analyzed}{" "}
                                 demo positions
                               </p>
-                              {analysis.demand.slice(0, 6).map((d) => (
-                                <div className="demand-row" key={d.skill_id}>
-                                  <div>
-                                    <span>{d.name}</span>
-                                    <strong>
-                                      {d.percent}
-                                      <small>%</small>
-                                    </strong>
+                              {[...analysis.demand]
+                                .sort((a, b) => {
+                                  const rank = (id: string) => {
+                                    const i = analysis.gaps.findIndex(
+                                      (g) => g.skill_id === id,
+                                    );
+                                    return i < 0 ? 100 : i;
+                                  };
+                                  return (
+                                    rank(a.skill_id) - rank(b.skill_id) ||
+                                    b.count - a.count
+                                  );
+                                })
+                                .slice(0, showAllDemand ? undefined : 6)
+                                .map((d) => (
+                                  <div className="demand-row" key={d.skill_id}>
+                                    <div>
+                                      <span>{d.name}</span>
+                                      <strong>
+                                        {d.percent}
+                                        <small>%</small>
+                                      </strong>
+                                    </div>
+                                    <div className="bar">
+                                      <i
+                                        className={
+                                          profile?.skills.some(
+                                            (s) => s.skill_id === d.skill_id,
+                                          )
+                                            ? "owned"
+                                            : ""
+                                        }
+                                        style={{ width: d.percent + "%" }}
+                                      />
+                                    </div>
                                   </div>
-                                  <div className="bar">
-                                    <i
-                                      className={
-                                        profile?.skills.some(
-                                          (s) => s.skill_id === d.skill_id,
-                                        )
-                                          ? "owned"
-                                          : ""
-                                      }
-                                      style={{ width: d.percent + "%" }}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
+                                ))}
+                              <button
+                                className="text-button"
+                                onClick={() => setShowAllDemand(!showAllDemand)}
+                              >
+                                {showAllDemand
+                                  ? "Show fewer skills"
+                                  : "Show all skills"}
+                              </button>
                               <div className="chart-legend">
                                 <span>
                                   <i />
@@ -1445,99 +1737,13 @@ export default function App() {
                         </div>
                       </>
                     )}
-                    {(view === "jobs" || view === "saved") && (
-                      <>
-                        <Heading
-                          eyebrow={
-                            view === "saved"
-                              ? "YOUR SHORTLIST"
-                              : "OPPORTUNITIES, PERSONALIZED"
-                          }
-                          title={
-                            view === "saved"
-                              ? "Keep your next steps close."
-                              : "Find your kind of opportunity."
-                          }
-                          description={`Ranked against your profile. ${analysis.jobs_analyzed} fictional ${analysis.career.name} positions, explained.`}
-                        />
-                        <div className="jobs-toolbar">
-                          <div className="filter-tabs">
-                            {[
-                              "Best match",
-                              "Ready to apply",
-                              "Prepare first",
-                            ].map((f) => (
-                              <button
-                                key={f}
-                                className={filter === f ? "active" : ""}
-                                onClick={() => setFilter(f)}
-                              >
-                                {f}
-                              </button>
-                            ))}
-                          </div>
-                          <label className="search-box">
-                            <Search size={16} />
-                            <input
-                              aria-label="Search jobs"
-                              placeholder="Search roles or companies"
-                              value={search}
-                              onChange={(e) => setSearch(e.target.value)}
-                            />
-                          </label>
-                        </div>
-                        <div className="job-list">
-                          {analysis.jobs
-                            .filter(
-                              (j) =>
-                                (view !== "saved" || saved.includes(j.id)) &&
-                                (filter === "Best match" ||
-                                  (filter === "Ready to apply" &&
-                                    j.score >= 85) ||
-                                  (filter === "Prepare first" &&
-                                    j.score < 70)) &&
-                                `${j.title} ${j.company}`
-                                  .toLowerCase()
-                                  .includes(search.toLowerCase()),
-                            )
-                            .map((j) => jobCard(j))}
-                        </div>
-                        {!analysis.jobs.some(
-                          (j) =>
-                            (view !== "saved" || saved.includes(j.id)) &&
-                            (filter === "Best match" ||
-                              (filter === "Ready to apply" && j.score >= 85) ||
-                              (filter === "Prepare first" && j.score < 70)) &&
-                            `${j.title} ${j.company}`
-                              .toLowerCase()
-                              .includes(search.toLowerCase()),
-                        ) && (
-                          <div className="empty-state">
-                            <Bookmark size={30} />
-                            <h2>
-                              {view === "saved"
-                                ? "Your shortlist starts here."
-                                : "No opportunities match this filter."}
-                            </h2>
-                            <p>
-                              {view === "saved"
-                                ? "Save a position from its match analysis to find it here."
-                                : "Try another filter or clear your search."}
-                            </p>
-                            <button
-                              className="button secondary"
-                              onClick={() => {
-                                setFilter("Best match");
-                                setSearch("");
-                                go("jobs");
-                              }}
-                            >
-                              Explore all jobs
-                              <ArrowRight size={16} />
-                            </button>
-                          </div>
-                        )}
-                      </>
+                    {view === "jobs" && (
+                      <JobsBrowser
+                        jobs={analysis.jobs}
+                        savedMode={false}
+                        careers={careers}
+                        renderJob={jobCard}
+                      />
                     )}
                     {view === "detail" && selectedJob && (
                       <>
@@ -1623,9 +1829,14 @@ export default function App() {
                                         {r.requirement_type} · {r.importance}
                                       </small>
                                     </div>
-                                    <span>{levels[r.minimum_proficiency]}</span>
-                                    <span>{levels[r.current]}</span>
+                                    <span data-label="Expected">
+                                      {levels[r.minimum_proficiency]}
+                                    </span>
+                                    <span data-label="Your profile">
+                                      {levels[r.current]}
+                                    </span>
                                     <span
+                                      data-label="Alignment"
                                       className={
                                         "comparison-status " +
                                         (r.status === "matched"
@@ -1768,6 +1979,13 @@ export default function App() {
                             missing skills
                           </span>
                         </div>
+                        <div className="notice">
+                          Ranking prioritizes weighted deficit, not the largest
+                          number of ready jobs. The unmet fraction (1 − current
+                          / required level) is weighted by importance (1–4) and
+                          required/preferred status (1 / 0.5), then averaged
+                          over all positions; ready-role gains only break ties.
+                        </div>
                         <div className="gap-cards">
                           {analysis.gaps.map((g, i) => (
                             <article
@@ -1812,8 +2030,10 @@ export default function App() {
                                 <p className="small muted">
                                   Priority combines demand, required/preferred
                                   status, importance, and your proficiency gap.
-                                  Improving this skill could unlock {g.unlocks}{" "}
-                                  ready-to-apply{" "}
+                                  Weighted deficit:{" "}
+                                  {g.priority_value.toFixed(4)}. Simulating this
+                                  skill alone at {levels[g.target]} could unlock{" "}
+                                  {g.unlocks} ready-to-apply{" "}
                                   {g.unlocks === 1 ? "role" : "roles"}.
                                 </p>
                                 <button
@@ -1852,52 +2072,62 @@ export default function App() {
                           simulates an Intermediate skill gain; it is not an
                           assessment or certification.
                         </div>
+                        <h2 className="learning-section-heading">
+                          Recommended
+                        </h2>
                         <div className="learning-grid">
-                          {resources.map((r, i) => (
-                            <article className="panel learning-card" key={r.id}>
-                              <div className="section-title">
-                                <span className="learning-number">
-                                  STEP {String(i + 1).padStart(2, "0")}
-                                </span>
-                                <BookOpen size={20} />
-                              </div>
-                              <span className="tag blue">{r.gap.name}</span>
-                              <h2>{r.title}</h2>
-                              <div className="learning-meta">
-                                <span>
-                                  <Clock3 size={14} />
-                                  {r.duration}
-                                </span>
-                                <span>{r.resource_type}</span>
-                              </div>
-                              <p>{r.description}</p>
-                              <div className="learning-why">
-                                <Sparkles size={14} />
-                                <span>
-                                  Recommended because {r.gap.name} appears in{" "}
-                                  {r.gap.job_count} of your analyzed positions.
-                                </span>
-                              </div>
-                              <ol>
-                                {r.steps.map((step) => (
-                                  <li key={step}>{step}</li>
-                                ))}
-                              </ol>
-                              <button
-                                className="button primary full"
-                                disabled={busy || r.completed}
-                                onClick={() => complete(r)}
+                          {resources
+                            .filter((r) => !r.completed && r.gap)
+                            .map((r, i) => (
+                              <article
+                                className="panel learning-card"
+                                key={r.id}
                               >
-                                <CheckCircle2 size={16} />
-                                {r.completed
-                                  ? "Completed"
-                                  : "Complete demo learning"}
-                                <ArrowRight size={15} />
-                              </button>
-                            </article>
-                          ))}
+                                <div className="section-title">
+                                  <span className="learning-number">
+                                    STEP {String(i + 1).padStart(2, "0")}
+                                  </span>
+                                  <BookOpen size={20} />
+                                </div>
+                                <span className="tag blue">{r.gap?.name}</span>
+                                <h2>{r.title}</h2>
+                                <div className="learning-meta">
+                                  <span>
+                                    <Clock3 size={14} />
+                                    {r.duration}
+                                  </span>
+                                  <span>{r.resource_type}</span>
+                                </div>
+                                <p>{r.description}</p>
+                                <div className="learning-why">
+                                  <Sparkles size={14} />
+                                  <span>
+                                    Recommended because {r.gap?.name} appears in{" "}
+                                    {r.gap?.job_count} of your analyzed
+                                    positions.
+                                  </span>
+                                </div>
+                                <ol>
+                                  {r.steps.map((step) => (
+                                    <li key={step}>{step}</li>
+                                  ))}
+                                </ol>
+                                <button
+                                  className="button primary full"
+                                  disabled={busy || r.completed}
+                                  onClick={() => complete(r)}
+                                >
+                                  <CheckCircle2 size={16} />
+                                  {r.completed
+                                    ? "Completed"
+                                    : "Complete demo learning"}
+                                  <ArrowRight size={15} />
+                                </button>
+                              </article>
+                            ))}
                         </div>
-                        {!resources.length && (
+                        <CompletedLearning resources={resources} />
+                        {!resources.some((r) => !r.completed) && (
                           <div className="empty-state">
                             <CheckCircle2 size={30} />
                             <h2>You’ve covered the current skill gaps.</h2>
@@ -1968,26 +2198,7 @@ export default function App() {
                 </span>
                 <span>Demo data · Deterministic matching · Mock AI</span>
                 {profile && (
-                  <button
-                    onClick={() =>
-                      run(async () => {
-                        const p = await api<Profile>(
-                          `/demo/reset/${profile.id}`,
-                          "POST",
-                        );
-                        setProfile(p);
-                        setDraft(p);
-                        setAnalysis(null);
-                        setProgress(null);
-                        setSaved([]);
-                        setView("profile");
-                        setNotice(
-                          "Demo reset. Puripatjudhai’s original profile is ready.",
-                        );
-                      })
-                    }
-                    disabled={busy}
-                  >
+                  <button onClick={() => setFreshConfirm(true)} disabled={busy}>
                     Reset demo
                     <RefreshCw size={11} />
                   </button>
@@ -1996,6 +2207,34 @@ export default function App() {
             </main>
           </div>
         </>
+      )}
+      {freshConfirm && (
+        <div className="modal-backdrop">
+          <section
+            className="panel application-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="fresh-demo-title"
+          >
+            <h2 id="fresh-demo-title">Start a fresh demo?</h2>
+            <p>
+              This resets your current profile to Puripatjudhai’s starting
+              profile and clears its saved jobs and completed learning. Continue
+              demo keeps your progress.
+            </p>
+            <div className="button-row">
+              <button
+                className="button secondary"
+                onClick={() => setFreshConfirm(false)}
+              >
+                Keep my progress
+              </button>
+              <button className="button primary" onClick={startFresh}>
+                Start fresh demo
+              </button>
+            </div>
+          </section>
+        </div>
       )}
       {connecting && (
         <div className="notice-toast" role="status">
@@ -2139,6 +2378,11 @@ export default function App() {
                   "Why did I get this score?",
                   "What should I improve first?",
                   "Am I ready to apply?",
+                  ...(analysis && analysis.gaps.length >= 2
+                    ? [
+                        `Compare ${analysis.gaps[0].name} and ${analysis.gaps[1].name}`,
+                      ]
+                    : []),
                 ].map((q) => (
                   <button
                     disabled={!analysis || chatBusy}
