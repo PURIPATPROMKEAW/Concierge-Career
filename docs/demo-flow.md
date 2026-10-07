@@ -8,7 +8,7 @@ Start both services from the README. Open http://127.0.0.1:3000. Use a viewport 
 
 ## 0:30–1:15 — Understand the person
 
-Select **Try demo profile**. Show Alex's seven skills, three projects, Computer Engineering education, and internship. Proficiency is editable, not a scientific percentage inferred from a resume. “Only after understanding the profile do we choose a direction.” Select **Choose Career Interest → Frontend Developer**.
+Select **Try demo profile**. Show Puripatjudhai's seven skills, three projects, Computer Engineering education, and internship. Proficiency is editable, not a scientific percentage inferred from a resume. “Only after understanding the profile do we choose a direction.” Select **Choose Career Interest → Frontend Developer**.
 
 ## 1:15–2:15 — Explain the comparison
 

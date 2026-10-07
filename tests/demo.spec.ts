@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-test("Alex: profile first, analysis, exact improvement, persistence and reset", async ({
+test("Puripatjudhai: profile first, analysis, exact improvement, persistence and reset", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -10,7 +10,9 @@ test("Alex: profile first, analysis, exact improvement, persistence and reset", 
     .getByRole("button", { name: "Try demo profile", exact: true })
     .click();
   await expect(
-    page.getByRole("heading", { name: "This is your starting point, Alex." }),
+    page.getByRole("heading", {
+      name: "This is your starting point, Puripatjudhai.",
+    }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Choose Career Interest" }).click();
   await page
@@ -18,7 +20,7 @@ test("Alex: profile first, analysis, exact improvement, persistence and reset", 
     .click();
   await expect(
     page.getByRole("heading", {
-      name: "Your next chapter looks promising, Alex.",
+      name: "Your next chapter looks promising, Puripatjudhai.",
     }),
   ).toBeVisible();
   await expect(page.locator(".score-ring strong")).toHaveText("78");

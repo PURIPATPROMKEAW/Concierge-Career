@@ -176,7 +176,7 @@ export default function ProfileEditor({
                     try {
                       setP(await api<Profile>("/demo/template"));
                       setNotice(
-                        "Demo resume loaded. Review Alex’s skills and background before continuing.",
+                        "Demo resume loaded. Review Puripatjudhai’s skills and background before continuing.",
                       );
                     } catch (e) {
                       setNotice((e as Error).message);

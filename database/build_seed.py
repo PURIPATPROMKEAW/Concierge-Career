@@ -139,7 +139,7 @@ definitions = [
     ),
 ]
 alex = {
-    "name": "Alex",
+    "name": "Puripatjudhai",
     "university": "Chulalongkorn University",
     "field": "Computer Engineering",
     "degree": "Bachelor",

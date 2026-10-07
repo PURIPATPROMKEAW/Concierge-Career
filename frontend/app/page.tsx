@@ -536,9 +536,9 @@ export default function App() {
                     <span className="preview-dots">•••</span>
                   </div>
                   <div className="preview-person">
-                    <div className="avatar">A</div>
+                    <div className="avatar">P</div>
                     <div>
-                      <strong>Alex’s next chapter</strong>
+                      <strong>Puripatjudhai’s next chapter</strong>
                       <p>Computer Engineering Student</p>
                     </div>
                     <span className="check-bubble">
@@ -652,7 +652,7 @@ export default function App() {
                   onClick={demo}
                   disabled={busy}
                 >
-                  Meet Alex. Try the demo
+                  Meet Puripatjudhai. Try the demo
                   <ArrowRight size={16} />
                 </button>
               </div>
@@ -878,6 +878,17 @@ export default function App() {
                       ],
                     ].map(([n, t]) => (
                       <div className="panel" key={t}>
+                        <div className="stat-icon" aria-hidden="true">
+                          {t === "Skills identified" ? (
+                            <Code2 size={20} />
+                          ) : t === "Projects added" ? (
+                            <FolderGit2 size={20} />
+                          ) : t === "Experiences" ? (
+                            <BriefcaseBusiness size={20} />
+                          ) : (
+                            <Target size={20} />
+                          )}
+                        </div>
                         <strong>{n}</strong>
                         <span>{t}</span>
                       </div>
@@ -1126,7 +1137,10 @@ export default function App() {
                         <div className="overview-top">
                           <section className="panel readiness-panel">
                             <div className="section-title">
-                              <h2>Career readiness</h2>
+                              <h2>
+                                <ChartNoAxesCombined size={19} />
+                                Career match results
+                              </h2>
                               <span className="subtle-label">
                                 PROFILE ALIGNMENT
                               </span>
@@ -1160,6 +1174,77 @@ export default function App() {
                                 >
                                   See what’s next
                                   <ArrowRight size={14} />
+                                </button>
+                              </div>
+                            </div>
+                            <div className="match-next-grid">
+                              <div>
+                                <h3>
+                                  <Target size={16} />
+                                  Top skill gaps
+                                </h3>
+                                {analysis.gaps.slice(0, 3).map((g) => (
+                                  <button
+                                    className="match-gap-row"
+                                    key={g.skill_id}
+                                    onClick={() => go("gaps")}
+                                  >
+                                    <span className="gap-icon">
+                                      <Code2 size={13} />
+                                    </span>
+                                    <span>{g.name}</span>
+                                    <div
+                                      className="bar"
+                                      aria-label={`${g.name}: ${levels[g.current]}, target ${levels[g.target]}`}
+                                    >
+                                      <i
+                                        style={{
+                                          width: `${Math.round((1 - g.current / g.target) * 100)}%`,
+                                        }}
+                                      />
+                                    </div>
+                                  </button>
+                                ))}
+                                {!analysis.gaps.length && (
+                                  <p className="muted">
+                                    You meet the skill requirements.
+                                  </p>
+                                )}
+                              </div>
+                              <div>
+                                <h3>
+                                  <Compass size={16} />
+                                  Suggested next steps
+                                </h3>
+                                <button
+                                  className="match-action-row"
+                                  onClick={() => go("learning")}
+                                >
+                                  <span>
+                                    <BookOpen size={15} />
+                                  </span>
+                                  Explore your learning plan
+                                  <ChevronRight size={14} />
+                                </button>
+                                <button
+                                  className="match-action-row"
+                                  onClick={() => go("profile")}
+                                >
+                                  <span>
+                                    <FolderGit2 size={15} />
+                                  </span>
+                                  Review your project evidence
+                                  <ChevronRight size={14} />
+                                </button>
+                                <button
+                                  className="match-action-row"
+                                  onClick={() => go("jobs")}
+                                >
+                                  <span>
+                                    <BriefcaseBusiness size={15} />
+                                  </span>
+                                  Explore matching positions
+                                  <ChevronRight size={14} />
                                 </button>
                               </div>
                             </div>
@@ -1897,7 +1982,7 @@ export default function App() {
                         setSaved([]);
                         setView("profile");
                         setNotice(
-                          "Demo reset. Alex’s original profile is ready.",
+                          "Demo reset. Puripatjudhai’s original profile is ready.",
                         );
                       })
                     }

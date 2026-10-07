@@ -29,7 +29,9 @@ test("cold API start recovers automatically from an HTML 503", async ({
     .getByRole("button", { name: "Try demo profile", exact: true })
     .click();
   await expect(
-    page.getByRole("heading", { name: "This is your starting point, Alex." }),
+    page.getByRole("heading", {
+      name: "This is your starting point, Puripatjudhai.",
+    }),
   ).toBeVisible();
 });
 

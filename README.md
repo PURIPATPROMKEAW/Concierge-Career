@@ -7,7 +7,7 @@ Students often know which career interests them but cannot tell whether their pr
 ## Included now
 
 - Profile-first journey: create/review your profile **before** selecting a career.
-- Alex demo profile; manual editing of skills, education, projects, experience, and certifications.
+- Puripatjudhai demo profile; manual editing of skills, education, projects, experience, and certifications.
 - UTF-8 `.txt` resume upload, deterministic alias extraction, and editable proficiency. Uploads are not retained.
 - 56 fictional jobs across 12 technology careers, canonical skills, occupations, and weighted requirements.
 - Backend-calculated matching, readiness, demand, ranking, alternatives, and prioritized gaps.
@@ -65,7 +65,7 @@ Compose launches PostgreSQL 17, FastAPI, and the production frontend on localhos
 
 ## Competition demo
 
-1. **Try demo profile** loads a fresh Alex session.
+1. **Try demo profile** loads a fresh Puripatjudhai session.
 2. Review seven skills, three projects, education, and a web internship.
 3. **Choose Career Interest → Frontend Developer**.
 4. Show eight analyzed jobs and readiness **78**.
@@ -73,7 +73,7 @@ Compose launches PostgreSQL 17, FastAPI, and the production frontend on localhos
 6. Open Skill gaps, then My learning.
 7. Complete **TypeScript Fundamentals**: explicitly simulated Intermediate proficiency.
 8. Observe **78 → 85**, **87 → 92**, more ready-to-apply roles, and Testing as the next priority.
-9. **Reset demo** restores the current session's Alex profile and clears its saved jobs/progress.
+9. **Reset demo** restores the current session's Puripatjudhai profile and clears its saved jobs/progress.
 
 See [the 4–5 minute presentation script](docs/demo-flow.md).
 
