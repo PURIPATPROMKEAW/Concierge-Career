@@ -19,6 +19,16 @@ Scores measure **profile alignment, never hiring probability**. Listings are fic
 
 ## Local setup
 
+### Reopen the demo on Windows
+
+After dependencies are installed, double-click **Start Demo.cmd** in the project folder. It builds the production frontend when needed, starts both services in hidden background processes, waits for health checks, and opens the website. Running it again reuses healthy services instead of creating duplicates. Logs are saved locally in `.runtime/` (excluded from Git).
+
+The demo address is **localhost**, not an always-online deployment. It works only while this computer and both services are running. After restarting Windows or stopping the processes, run **Start Demo.cmd** again. A browser bookmark alone cannot start the servers.
+
+For troubleshooting without opening a browser: `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-demo.ps1 -NoBrowser`. Startup errors identify missing prerequisites, occupied ports, failed builds, or the relevant log file.
+
+### First-time installation / development
+
 Requirements: Node 24, pnpm 11.19.0, Python 3.12 with venv/pip. Run from repository root:
 
 ```powershell
