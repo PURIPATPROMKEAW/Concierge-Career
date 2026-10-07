@@ -161,6 +161,6 @@ Install `ruff==0.11.10` for Python linting. CI includes SQLite/PostgreSQL API te
 | Alias and competency mapping | ESCO-compatible fields | Verified ESCO concepts |
 | Learning-to-profile feedback | Intermediate skill gain; application checklist | Assessments and application integrations |
 
-There is no production authentication. Browser local storage remembers a profile ID; personal records live in the local database. Keep demo data synthetic. Add authentication and ownership checks before exposing the API publicly.
+Hosted deployment uses anonymous browser sessions with profile ownership checks. Browser local storage remembers a profile ID; an HttpOnly session cookie grants access to that browser's profiles. Clearing cookies loses anonymous access. Local mode keeps ownership optional for compatibility. Account-based cross-device access is not included. See [Render deployment](docs/deployment.md).
 
 The user chose the existing public repository and feature-branch development. Sites is not used or deployed for this implementation.

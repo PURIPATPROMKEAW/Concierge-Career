@@ -78,6 +78,12 @@ class Profile(Base):
     )
 
 
+class ProfileAccess(Base):
+    __tablename__ = "profile_access"
+    profile_id: Mapped[str] = mapped_column(ForeignKey("career_profiles.id"), primary_key=True)
+    session_hash: Mapped[str] = mapped_column(String(64))
+
+
 class UserSkill(Base):
     __tablename__ = "user_skills"
     profile_id: Mapped[str] = mapped_column(ForeignKey("career_profiles.id"), primary_key=True)

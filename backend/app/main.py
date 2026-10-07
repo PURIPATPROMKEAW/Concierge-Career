@@ -8,7 +8,8 @@ from fastapi import FastAPI, Depends, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select, delete
 from .core import engine, Session, get_db
-from .models import Career, Job, SavedJob, Progress
+from .models import Career, Job, SavedJob, Progress, ProfileAccess
+from .access import session_middleware, visitor_hash
 from .schemas import ProfileInput, SkillInput, AnalysisInput, CompletionInput, ChatInput
 from .schemas import (
     ProfileOutput,
@@ -37,6 +38,7 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Concierge-Career API", version="1.0.0", lifespan=lifespan)
+app.middleware("http")(session_middleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("CORS_ORIGINS", "http://127.0.0.1:3000,http://localhost:3000").split(
@@ -44,6 +46,7 @@ app.add_middleware(
     ),
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["Content-Type"],
+    allow_credentials=True,
 )
 
 
@@ -83,6 +86,7 @@ def template():
 @app.post("/api/demo/profile", response_model=ProfileOutput)
 def demo(db=Depends(get_db)):
     p = repo.save_profile(db, repo.seed_data()["alex"])
+    db.add(ProfileAccess(profile_id=p.id, session_hash=visitor_hash.get()))
     db.commit()
     return repo.profile_dict(p)
 
@@ -104,6 +108,7 @@ def create_profile(payload: ProfileInput, db=Depends(get_db)):
     data = payload.model_dump()
     validate_skills(db, data)
     p = repo.save_profile(db, data)
+    db.add(ProfileAccess(profile_id=p.id, session_hash=visitor_hash.get()))
     db.commit()
     return repo.profile_dict(p)
 

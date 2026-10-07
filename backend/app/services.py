@@ -2,13 +2,18 @@ from fastapi import HTTPException
 from sqlalchemy import select
 from . import repositories as repo
 from .matching import analyze
-from .models import Profile, Career, LearningResource, Progress, UserSkill
+from .models import Profile, ProfileAccess, Career, LearningResource, Progress, UserSkill
+from .access import ownership_required, visitor_hash
 from ai.providers import MockAIProvider
 
 provider = MockAIProvider()
 
 
 def require_profile(db, user_id):
+    if ownership_required():
+        owner = db.get(ProfileAccess, user_id)
+        if not owner or owner.session_hash != visitor_hash.get():
+            raise HTTPException(404, "Profile not found in this browser session.")
     p = db.get(Profile, user_id)
     if not p:
         raise HTTPException(404, "Profile not found. Create or load a demo profile first.")
@@ -71,6 +76,8 @@ def learning(db, user_id, career_id):
 
 def complete(db, payload):
     p = require_profile(db, payload.user_id)
+    db.refresh(p, with_for_update=True)
+    db.expire(p, ["skills"])
     resource = db.get(LearningResource, payload.resource_id)
     if not resource:
         raise HTTPException(404, "Learning resource not found.")

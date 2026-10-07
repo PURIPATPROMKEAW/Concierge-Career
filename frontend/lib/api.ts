@@ -1,14 +1,15 @@
-const base = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
+const base = process.env.NEXT_PUBLIC_API_URL || "/api";
 export async function api<T>(
   path: string,
   method = "GET",
   body?: unknown,
 ): Promise<T> {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
+  const timer = setTimeout(() => controller.abort(), 90000);
   try {
     const response = await fetch(base + path, {
       method,
+      credentials: "include",
       headers:
         body instanceof FormData ? {} : { "Content-Type": "application/json" },
       body:
@@ -30,10 +31,11 @@ export async function api<T>(
   } catch (error) {
     if (
       error instanceof TypeError ||
+      error instanceof SyntaxError ||
       (error instanceof Error && error.name === "AbortError")
     )
       throw new Error(
-        "Cannot reach the career service. Check that the backend is running, then retry.",
+        "The career service is temporarily unavailable or waking up. Please retry in a moment.",
       );
     throw error;
   } finally {

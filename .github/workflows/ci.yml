@@ -29,13 +29,16 @@ jobs:
       - run: python -m pytest backend/tests -q
       - run: python -m ruff check backend ai database scripts
       - run: pnpm lint
-      - run: python -m pytest backend/tests/test_api.py -q
+      - run: python -m pytest backend/tests/test_api.py backend/tests/test_access.py -q
         env:
           TEST_DATABASE_URL: postgresql+psycopg://concierge:testonly@localhost:5432/concierge_test
       - run: pnpm build
       - run: pnpm typecheck
       - run: pnpm exec playwright install --with-deps chromium
       - name: Start local test services
+        env:
+          REQUIRE_PROFILE_OWNERSHIP: "true"
+          COOKIE_SECURE: "false"
         run: |
           python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 > /tmp/concierge-api.log 2>&1 &
           pnpm exec next start frontend --hostname 127.0.0.1 > /tmp/concierge-web.log 2>&1 &
