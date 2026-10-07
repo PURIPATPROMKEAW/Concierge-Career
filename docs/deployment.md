@@ -15,4 +15,8 @@ Local mode keeps ownership optional for existing demo data. Do not disable owner
 
 Free web services sleep after inactivity, causing cold-start delays. Free PostgreSQL expires after 30 days. This deployment is for short-term testing; choose a paid database before storing data you need to keep. Confirm these limits in [Render's current documentation](https://render.com/docs/free).
 
+Cold-start recovery: the frontend proxy waits up to 90 seconds for the API. Read requests retry temporary network failures, non-JSON wake pages, and HTTP 502/503/504 for up to three minutes per read. A connection message appears during initialization. Writes are never retried automatically because a timed-out write may already have succeeded. A transient profile fetch failure does not clear the remembered profile ID; only HTTP 404 clears it.
+
+If errors continue beyond startup, inspect both web-service deploy status/logs, `BACKEND_HOST`/`BACKEND_URL`, and the database status/expiry in Render. `/api/health` on the frontend should return JSON with `database: postgresql`. The local Start Demo launcher does not control hosted services. Publishing a new commit requires a successful frontend redeploy; the old deployed version retains the previous error behavior.
+
 Validation before sharing: create profiles in two separate browser sessions, confirm neither can access the other, run the complete Alex score-improvement journey, and refresh to confirm persistence. Never use a local development database as a deployment fixture.

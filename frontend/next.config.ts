@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 const config: NextConfig = {
   reactStrictMode: true,
   devIndicators: false,
+  experimental: { proxyTimeout: 90000 },
   async rewrites() {
     const backend = (
       process.env.BACKEND_URL ||

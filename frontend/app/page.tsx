@@ -46,7 +46,7 @@ import type {
   Alternative,
   ProgressResult,
 } from "../lib/api-types";
-import { api } from "../lib/api";
+import { api, ApiError } from "../lib/api";
 import ProfileEditor, { emptyProfile } from "../components/ProfileEditor";
 
 type View =
@@ -160,6 +160,7 @@ export default function App() {
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [health, setHealth] = useState("Connecting");
+  const [connecting, setConnecting] = useState(false);
   const [filter, setFilter] = useState("Best match");
   const [search, setSearch] = useState("");
   const [chatOpen, setChatOpen] = useState(false);
@@ -191,11 +192,14 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   async function initialize() {
+    setConnecting(true);
+    setHealth("Connecting");
+    setError("");
     try {
-      const [s, c, h] = await Promise.all([
+      const h = await api<{ database: string }>("/health");
+      const [s, c] = await Promise.all([
         api<Skill[]>("/skills"),
         api<Career[]>("/careers"),
-        api<{ database: string }>("/health"),
       ]);
       setSkills(s);
       setCareers(c);
@@ -206,13 +210,19 @@ export default function App() {
           const p = await api<Profile>("/profile/" + id);
           setProfile(p);
           setDraft(p);
-        } catch {
-          localStorage.removeItem("concierge-profile");
+        } catch (e) {
+          if (e instanceof ApiError && e.status === 404) {
+            localStorage.removeItem("concierge-profile");
+          } else {
+            throw e;
+          }
         }
       }
     } catch (e) {
       setHealth("Offline");
       setError((e as Error).message);
+    } finally {
+      setConnecting(false);
     }
   }
   useEffect(() => {
@@ -1901,6 +1911,13 @@ export default function App() {
             </main>
           </div>
         </>
+      )}
+      {connecting && (
+        <div className="notice-toast" role="status">
+          <Clock3 size={20} />
+          Connecting to the career service. After inactivity, the free demo may
+          take a few minutes to start. Retrying automatically…
+        </div>
       )}
       {error && (
         <div className="error-toast" role="alert">
